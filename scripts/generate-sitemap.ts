@@ -71,8 +71,10 @@ function formatDateW3C(dateStr: string): string {
 }
 
 function generateUrlEntry(enPath: string, koPath: string, lastmod: string, priority: string): string {
-  const enUrl = `${SITE_URL}${enPath}${enPath.endsWith('/') ? '' : '/'}`;
-  const koUrl = `${SITE_URL}${koPath}${koPath.endsWith('/') ? '' : '/'}`;
+  const cleanEnPath = enPath.length > 1 && enPath.endsWith('/') ? enPath.slice(0, -1) : enPath;
+  const cleanKoPath = koPath.length > 1 && koPath.endsWith('/') ? koPath.slice(0, -1) : koPath;
+  const enUrl = `${SITE_URL}${cleanEnPath}`;
+  const koUrl = `${SITE_URL}${cleanKoPath}`;
   
   return `  <url>
     <loc>${enUrl}</loc>

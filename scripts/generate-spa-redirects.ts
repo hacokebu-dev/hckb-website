@@ -66,8 +66,9 @@ function generateSpaRedirects(): void {
   const allRoutes = [...STATIC_ROUTES, ...dynamicRoutes];
 
   for (const route of allRoutes) {
-    const routeDir = path.join(DIST_DIR, route);
-    const routeIndexPath = path.join(routeDir, 'index.html');
+    const cleanRoute = route.replace(/^\//, '');
+    const routePath = path.join(DIST_DIR, `${cleanRoute}.html`);
+    const routeDir = path.dirname(routePath);
 
     // Create directory if it doesn't exist
     if (!fs.existsSync(routeDir)) {
@@ -75,8 +76,8 @@ function generateSpaRedirects(): void {
     }
 
     // Copy index.html to this route
-    fs.writeFileSync(routeIndexPath, indexHtmlContent);
-    console.log(`✓ Created ${routeIndexPath}`);
+    fs.writeFileSync(routePath, indexHtmlContent);
+    console.log(`✓ Created ${routePath}`);
   }
 
   console.log(`\n✅ SPA redirects generated for ${allRoutes.length} routes (${STATIC_ROUTES.length} static + ${dynamicRoutes.length} dynamic)`);

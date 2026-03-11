@@ -14,6 +14,17 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-vendor': ['lucide-react', 'framer-motion', '@radix-ui/react-slot', 'tailwind-merge', 'clsx'],
+          'markdown-vendor': ['react-markdown', 'remark-gfm', 'rehype-raw']
+        }
+      }
+    }
+  },
   plugins: [
     react(),
     mode === "development" && componentTagger(),

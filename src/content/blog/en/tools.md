@@ -7,82 +7,81 @@ category: Making Story
 
 <img src="/assets/tools_02.jpg">
 
-‘Tools’ is a web service created under the concept of an ‘All-in-One Workflow Toolkit for Publishing Editors.’ This project began with a proposal from the publishing editor community, ‘Editor's Room.’ After launching the community, they faced a familiar challenge:
-“We need a reason for people to keep coming back.” Their answer was to gather web-based tools that would be genuinely helpful for an editor's daily work, and they proposed the implementation of this idea to HACO & KEBU.
+The project began with a proposal from 'Editor's Room,' a community for publishing editors. It was developed with the goal of providing a suite of tools to assist with daily tasks and naturally encouraging continued engagement within the community.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Planning Rooted in the Voices of Professionals
+## Inspired by Voices from the Field
 <img src="/assets/tools_19.jpg">
-As HACO & KEBU, we didn’t have first-hand experience with the day-to-day tasks of publishing editors. so we couldn't build these tools based on imagination alone. We conducted interviews with working editors and, through that process, planned six core editorial tools. While speaking with them, one thing became clear: editors are, in many ways, office workers like anyone else. Therefore, in addition to specialized editorial tools, we decided to develop features like a ‘Tenure Calculator’ and a ‘Net Salary Table’—the kind of resources people find themselves searching for quite often. Furthermore, we included a bookmark page that aggregates useful websites for editors.
+As someone not intimately familiar with the day-to-day workflow of a publishing editor, I (Hako & Kebu) couldn't just build these tools based on imagination. Instead, I conducted interviews with actual editors to plan six specialized editing tools. During these conversations, one thing became clear: editors are, after all, office workers. So, alongside professional editing tools, I decided to include features like a 'Service Period Calculator' and an 'After-tax Salary Table'—the kind of things people find themselves searching for quite often. Additionally, I included a curated bookmark page featuring sites that editors might find genuinely helpful.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
 ## Planning → Prototype → Review → Iteration
 
-I was responsible for the detailed feature planning, created a prototype, and then received feedback from editors. This review process led to several crucial improvements, such as:
+I handled the detailed functional planning myself, built a prototype, and then had it reviewed by editors. These reviews led to some crucial improvements that I likely would have missed if I had relied solely on guesswork. For example:
 <img src="/assets/tools_20.jpg">
-- A ‘One-click Copy’ feature for book spine calculations and character counts.
-- Displaying the count in ‘Manuscript Paper Sheets’ (wongoji) for character counts.
-- Providing guidance on image file extensions when generating QR codes.
+- A "Quick Copy" feature for spine width calculations and character counts.
+- Displaying the number of manuscript paper sheets (Won-go-ji) during character counts.
+- Guidance on image file extensions when generating QR codes.
 
-These were details we would likely have missed without direct feedback from real editors. Through multiple rounds of review, improvement, and implementation, the service evolved into its current form.
+Through several rounds of this review-improve-reflect cycle, the project evolved into its current form.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Keeping Technology as Simple as Possible
+## Keeping Technology Simple
 
-For this project, I deliberately avoided overengineering the tech stack. Looking at the service specifications, there was no compelling reason to use the latest, most complex technologies. Instead, I stuck to HTML, CSS, and using vanilla JavaScript as much as possible. This was a choice made to minimize future maintenance issues.
+For this project, I intentionally set aside any ambition for a complex tech stack. Looking at the service specifications, there was no compelling reason to use the latest "hyped" technologies. I stuck to HTML, CSS, and JavaScript—specifically Vanilla JS whenever possible. My priority was to minimize future maintenance issues.  
 <img src="/assets/tools_21.jpg">
-For features requiring data persistence, I used Local Storage, and for sections like bookmarks that require data management, I utilized JSON files. Again, these choices were made to ensure ease of maintenance.
+I used Local Storage for features requiring data persistence and managed data-heavy sections, like bookmarks, using JSON files. Again, these were deliberate choices to ensure easy maintenance.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Concise and Reusable Design
+## Design: Concise and Reusable
 <img src="/assets/tools_22.jpg">
-The design criteria were also clear: simplicity and reusability.
+The design principles were clear: 'Conciseness and Reusability.'
 
-I wanted design elements developed for one page to be easily applicable to others. I designed the system so that new tools can be added without cluttering the interface. and will maintain a consistent look and feel.
+I wanted design elements developed for one page to be seamlessly reusable elsewhere. The system was engineered so that even as new tools are added, the UI remains consistent and clutter-free.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Deployment: Ultimately Settling on GitHub
+## Finalizing Deployment via GitHub
 
-Initially, I chose Netlify Drop for deployment, thinking it would be easy for someone without a strong technical background to manage. However, I soon ran into issues. I couldn't modify or replace specific files on the server directly; any minor change required re-uploading the entire service. This quickly became inconvenient during active development. so I eventually switched to a GitHub-connected deployment workflow.
+Initially, I chose 'Netlify Drop' for deployment, thinking it would be easy for someone less technical to manage. However, I soon ran into limitations: I couldn't modify or replace specific files on the server directly, and even the smallest change required re-uploading the entire service. This proved highly inefficient during development, so I eventually switched to a GitHub-integrated deployment workflow.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
 ## The Fun Part: Book Size Comparison Table
 
-The most enjoyable challenge was the book size comparison feature. Simply showing numbers felt no different from existing data, and showing only images lacked precision. The solution I came up with was a structure where the specific trim size appears visually when you hover over the table.
+The most enjoyable challenge was the book size comparison feature. Showing just numbers felt no different from existing data, while using only images lacked intuition. The solution I came up with was a structure where hovering over a table row visually renders the corresponding book format.  
 <img src="/assets/tools_23.jpg">
-I brainstormed how to solve this technically and landed on the simplest approach: creating individual images for each trim size and displaying the corresponding image on hover. Despite its technical simplicity, it creates a surprisingly fun and engaging interaction.
+I debated the technical implementation but ultimately went with the simplest approach: creating individual images for each format and displaying them on hover. Despite its simplicity, it provides a fun, interactive experience for the user, which I found quite satisfying.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
 ## The Hardest Part: Data Collection
 
-Looking back, gathering the data was more difficult than the technical implementation.
+Looking back, gathering data was far more difficult than the actual coding.
 
-Book spine calculations require precise paper thickness data. However, most paper manufacturers only officially provide the ‘basis weight’ (g/㎡) and not the actual thickness. Consequently, I could only include well-known papers whose thickness information was publicly available online.
+To calculate spine width, paper thickness information is essential. However, most paper manufacturers only officially provide weight (gsm), not thickness. Consequently, I could only include well-known paper types whose thickness data was publicly available.
 
-Selecting representative books for each trim size was also a hurdle. Since bookstores don't typically allow you to search for books by their physical dimensions, I had to manually cross-reference book sizes to select examples. The very problem this tool was meant to solve became the obstacle to building it! (This is why most sizes have six examples, but the Gukbae-pan and Tabloid sizes only have three—I simply couldn't find more.)
+Selecting representative books for each trim size was another hurdle. Since bookstores don't typically categorize books by trim size, I had to manually cross-reference book dimensions one by one. The very problem this tool was meant to solve became the primary obstacle in making it. (This is why most sizes have six representative books, while A4 and Tabloid sizes only have three—I simply couldn't find more.)
 
-Finally, as mentioned earlier, Tools manages data via JSON for maintenance. While adding items one by one isn't difficult, the process of manually populating the initial dataset was quite tedious.
+Finally, as mentioned, managing data via JSON makes maintenance easier, but the initial process of manually inputting all that data was incredibly tedious.  
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Closing Thoughts
+## Final Thoughts
 
-Tools wasn't built with flashy technology, but I prioritized one question above all: “Will this actually be useful?” My hope is that Tools becomes a practical, everyday companion for editors.
+'Tools' isn't a service built with flashy technology, but it was built with a deep focus on whether it would actually be useful. I hope it finds a permanent spot in the bookmarks of editors everywhere.
 &nbsp;
 
 &nbsp; 

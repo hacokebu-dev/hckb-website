@@ -10,77 +10,73 @@ category: Making Story
 </figure>
 &nbsp;
 
-## The Spark
+## The Beginning
 
-The idea to build the HACO & KEBU website hit me out of nowhere. I think it was the realization that it had already been a year since I first registered the domain. I always knew I’d get around to it 'someday,' but that reminder was the spark I needed. I decided right then and there: it's time to build.
+I recently realized it’s been nearly a year since I registered the domain 'hacokebu.com'. That realization sparked a sudden resolution: I had to build the **Hako & Kebu** website right now. Vague thoughts of "I should get to that someday" always seem to lead to these moments of urgent inspiration.
 
-As a designer at my core, my mind immediately jumped to the visual concept. I wanted something bold yet minimalist. But then the overthinking started. What exactly am I showcasing? How should I do it? I even hesitated, thinking, "Should I create the assets myself, or will AI produce something better anyway?"
-
-Then came the Aha moment. I realized I shouldn’t be stressing over the design yet—I needed to focus on the content. My logical brain said, "Create the work first, then build the site." But my heart said, "Build the site first." I knew that once the stage was set, I’d be even more motivated to fill it with great work.
+I wanted the website to showcase what I do best. However, I hit a wall at "What *exactly* am I best at?" and another at "How should I present it?" I didn’t even have the content ready to fill the pages. It felt overwhelming. For a moment, I thought about waiting until I had a finished body of work to display, but I decided to just push forward. I figured that even if the site started with dummy data, having the space ready would motivate me to run harder to fill it.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Finding Meaning
+## Meaning
 
-Even without a finished portfolio, I started organizing the content. Writing the headline for the Hero section helped me define exactly what I do. I clarified the meaning behind the unique name 'HACO & KEBU,' the values I stand for, and what I want to achieve in the future.
+I began organizing the content piece by piece. While brainstorming the title for the hero section, I clarified the definition of the work I do. I wrote concise descriptions of the somewhat peculiar name "Hako & Kebu," the values I pursue, and what I hope to achieve in the future.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Bold by Design
+## Bold Design
 
-When I returned to the design, I doubled down on the "bold" theme. (Maybe because I don’t get to be this daring at my day job!) I went with oversized fonts and a striking color palette: Black, Ivory, and Red.
+After outlining the core concept, I opened Figma. I wanted this website to have a **bold design** (perhaps because I’ve been itching to do something more daring than what my day job allows?). I went with oversized typography and a striking color palette: a combination of deep black, ivory, and vibrant red.
 
-I did worry a bit about readability—long stretches of ivory text on a black background isn't always the most comfortable experience. But since the contrast passed accessibility standards and I wasn't in the mood to design a separate "Light Mode," I decided to stick to my guns.
+I did have some concerns about whether long passages of ivory text on a black background would provide a comfortable reading experience. Even though the color contrast passed web accessibility standards, I worried it might feel heavy. However, creating a separate light theme felt too cumbersome for this stage, so I decided to stick with the original vision.
 
 <img src="/assets/hckb_07.jpg">
-
-I mocked up about five core pages in Figma, trusting that AI could handle the rest, like the 404 and empty states.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Enter Lovable
+## Lovable
 
 <img src="/assets/hckb_04.jpg">
 
-Then came the technical side. I initially thought of using Gatsby(<https://www.gatsbyjs.com>), but heard Astro(<https://astro.build>) is the way to go these days. While looking into Astro, I had a thought: "Why not just build it myself with an AI agent?"
+Then came the dilemma of technical implementation. I first thought of **Gatsby** (<https://www.gatsbyjs.com>), a static site generator I’ve used before, but I’d heard that **Astro** (<https://astro.build>) is the current industry favorite. As I was looking into Astro, I suddenly thought, "Do I really need to build this from scratch?" So, I decided to co-create it with an AI agent.
 
-As luck would have it, I got a chance to try the PRO plan of a service called Lovable(<https://lovable.dev>). I already subscribe to several AI tools, and it made me laugh at myself—I’m the type of person who leaves unread books on the shelf but rushes to borrow new ones from the library. My curiosity won, and the project began.
+Coincidentally, I got the chance to try the PRO plan of a service called **Lovable** (<https://lovable.dev>) through a promotion. I already subscribe to several paid AI services, yet here I was, chasing after a new tool. It reminded me of my habit of letting books I’ve bought sit on the shelf while I rush to read a book I just borrowed from the library. I had to laugh at myself—but that’s how the project with Lovable began.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
 ## Working with an AI Agent
 
-I fed my Figma designs and detailed specs into Lovable. I asked for everything: multi-language support (i18n), Unicorn Studio scripts for the Hero section, a Markdown-based portfolio and blog, and full responsiveness. The first draft looked okay, but it wasn't quite at the design level I expected, so I had to roll up my sleeves.
+I fed my Figma designs and detailed specs into Lovable. I was meticulous with my requests: multi-language support (i18n), applying Unicorn Studio scripts to the hero section, a Markdown-based portfolio and blog, and full responsiveness. The initial output was—as is typical with AI agents—quite impressive at first glance. However, it wasn't at the level of polish I wanted, so it required significant refining.
 
 <img src="/assets/hckb_05.jpg">
 
-Lovable has a cool feature called 'Visual Edits' where you can click an element and prompt a change. To be honest, it was a bit frustrating, so I ended up giving specific instructions by checking the class names myself.
+Lovable had an interesting feature I hadn't seen in other AI agents at the time: **"Visual Edit."** It allows you to click directly on the UI and request specific changes. I tried it out with high hopes, but it ended up feeling a bit frustrating for my workflow. Eventually, I went back to my old ways—checking class names myself and giving precise instructions. 😅
 
-However, the communication was great. it understood me surprisingly well. it understood me perfectly. One of the best parts was the local environment sync—pushing code from my machine to Lovable and vice versa was smooth.
+That said, the process of chatting and approving changes felt great. Maybe it was because the tasks were straightforward, but Lovable seemed to understand my Korean instructions more intuitively than other agents. (For context, I made over 100 requests—ranging from simple questions to complex tasks—and used about 100 credits quite liberally.)
 
-For those curious about the numbers, I made over 100 requests in total, ranging from quick questions to complex coding tasks. Since I had free access thanks to a promotion, I didn't worry about being efficient—I just fired away and used up about 100 credits.
+Another highlight was the local environment integration. Being able to edit code locally, push it, and see it reflected in Lovable immediately—or vice versa—made for a very smooth and fast workflow.
+
+One of Lovable's strengths is supposedly its seamless integration with Supabase for DB management and social logins, but I didn't use those features at all. I considered trying a separate project just to test them out, but I haven't gotten around to it yet.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
 ## The Logo
 
 <img src="/assets/hckb_06.jpg">
 
-I couldn't launch without a logo. I knew I wanted a drum motif. In Korea, there’s an expression that translates roughly to “playing both the drum and the janggu(traditional Korean double-headed drum) alone,” which basically means being a one-man show. That’s exactly how I felt.
-
-I experimented with several drum-inspired designs and refined them into the current logo. Is it perfect? Maybe not yet. I’ll live with it for a while; if it grows on me, I’ll keep it. If not, I’ll go back to the drawing board.
+Lastly, I have to mention the logo. Honestly, I didn't even have one until I started building the site. But you can't finish a website without a logo, so I got to work. I felt like it should involve a **"Buk"** (a traditional Korean drum). It reflects how I feel right now—playing the drum, the gong, and everything else all by myself (a "one-man band" situation). I created several drafts based on the drum motif and refined them into the logo you see now. To be honest, I'm not 100% satisfied with it. I’ll keep it for now to see if it grows on me; if not, I’ll sit down and give it a proper rework later.
 &nbsp;
 
-&nbsp; 
+&nbsp;  
 
-## Wrapping Up
+## Final Thoughts
 
-By choosing to build the website first, I was forced to define my logo, my values, and my brand all at once. Now that the house is built, it's time to fill it with great work. Stay tuned!
+In the end, the decision to build the website first forced me to tackle everything from the logo to my core values all at once. Now, it’s time to start filling this space with high-quality work.
 &nbsp;
 
 &nbsp; 

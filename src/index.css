@@ -129,38 +129,52 @@
   }
 
   .markdown-content {
-    @apply text-ivory leading-relaxed text-[1.125rem];
+    @apply leading-relaxed text-[1.125rem];
+    color: #ffffff;
   }
 
   .markdown-content p {
     @apply mb-4;
+    color: #ffffff;
   }
 
   .markdown-content h1 {
     @apply font-bold mb-6 mt-8;
     font-size: 2.6rem;
+    color: #ffffff;
   }
 
   .markdown-content h2 {
     @apply font-bold mb-4 mt-6;
     font-size: 1.8rem;
+    color: #ffffff;
   }
 
   .markdown-content h3 {
     @apply text-xl font-bold mb-3 mt-4;
+    color: #ffffff;
   }
 
   /* Lists with bullets and numbers */
   .markdown-content ul {
     @apply mb-4 pl-6 list-disc;
+    color: #ffffff;
   }
 
   .markdown-content ol {
     @apply mb-4 pl-6 list-decimal;
+    color: #ffffff;
   }
 
   .markdown-content li {
     @apply mb-2;
+    color: #ffffff;
+  }
+
+  .markdown-content strong,
+  .markdown-content em,
+  .markdown-content b {
+    color: #ffffff;
   }
 
   /* Nested lists */
@@ -280,8 +294,8 @@
   }
 
   /* ReactMarkdown 커스텀 img 컴포넌트의 wrapper div 처리 */
-  .markdown-content figure.seamless > div,
-  .markdown-content div.seamless > div {
+  .markdown-content figure.seamless>div,
+  .markdown-content div.seamless>div {
     @apply !my-0;
   }
 
@@ -331,6 +345,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -356,11 +371,11 @@
 /* Hide Unicorn Studio watermark */
 [data-us-project] a[href*="unicorn"],
 [data-us-project] img[alt*="unicorn"],
-[data-us-project] > div > a,
+[data-us-project]>div>a,
 [data-us-project] [style*="position: absolute"][style*="bottom"] a,
 [data-us-project] a[target="_blank"],
-[data-us-project] > a,
-div[data-us-project] ~ a,
+[data-us-project]>a,
+div[data-us-project]~a,
 a[href*="unicorn.studio"] {
   display: none !important;
   visibility: hidden !important;
@@ -376,6 +391,7 @@ a[href*="unicorn.studio"] {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

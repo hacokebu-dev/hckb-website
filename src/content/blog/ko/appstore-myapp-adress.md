@@ -12,7 +12,7 @@ category: 노트
 ## 1. 앱스토어 마케팅 툴 접속
 <img src="/assets/asmyapp1.png">
 
-https://toolbox.marketingtools.apple.com/en-us/app-store/us
+<a href="https://toolbox.marketingtools.apple.com/en-us/app-store/us" target="_blank">toolbox.marketingtools.apple.com/en-us/app-store/us</a>
 
 위 주소로 접속한 다음, **내 앱 이름을 검색**해서 내 앱 페이지로 들어간다.
 &nbsp;
@@ -38,7 +38,7 @@ https://toolbox.marketingtools.apple.com/en-us/app-store/us
 &nbsp; 
 
 **요약**
-- 애플 앱스토어 마케팅 툴 웹사이트(https://toolbox.marketingtools.apple.com/en-us/app-store/us)에 접속해서 내 앱 이름을 검색하고 해당 페이지로 이동.
+- <a href="https://toolbox.marketingtools.apple.com/en-us/app-store/us" target="_blank">애플 앱스토어 마케팅 툴</a>에 접속해서 내 앱 이름을 검색하고 해당 페이지로 이동.
 - 앱 이름 하단에 표시된 개발자 이름을 클릭해 내 앱 리스트 페이지로 진입.
 - 내 앱 리스트 페이지 하단의 콘텐트 링크에서 전용 주소 확인.
 &nbsp;

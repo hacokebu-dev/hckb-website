@@ -12,9 +12,9 @@ const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { currentLang } = useLanguage();
-  
+
   const project = getProject(id || '', currentLang as 'en' | 'ko');
-  
+
   if (!project) {
     return (
       <Layout>
@@ -28,7 +28,7 @@ const ProjectDetail = () => {
   const metaDescription = project.description || project.content.substring(0, 155).replace(/[#*_\n]/g, '');
   const ogImage = project.ogImage || project.thumbnail;
   const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? 'ko/' : ''}project/${id}`;
-  
+
   const creativeWorkSchema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -47,7 +47,7 @@ const ProjectDetail = () => {
     "inLanguage": currentLang,
     ...(ogImage && { "image": ogImage })
   };
-  
+
   return (
     <Layout>
       <Helmet>
@@ -80,11 +80,11 @@ const ProjectDetail = () => {
               </button>
               <span className="text-ivory text-[1.5rem]">{project.date}</span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ivory !leading-[1.3]">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#ffffff] !leading-[1.3]">
               {project.title}
             </h1>
           </header>
-          
+
           {/* Content */}
           <div className="markdown-content">
             <ReactMarkdown

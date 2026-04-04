@@ -13,7 +13,7 @@ If you've launched multiple apps, you might want a single page that showcases yo
 <img src="/assets/asmyapp1.png">
 
 First, visit Apple's official marketing toolkit:
-https://toolbox.marketingtools.apple.com/en-us/app-store/us
+<a href="https://toolbox.marketingtools.apple.com/en-us/app-store/us" target="_blank">toolbox.marketingtools.apple.com/en-us/app-store/us</a>
 
 Once there, **search for any one of your apps** to enter its specific asset page.
 &nbsp;
@@ -39,7 +39,7 @@ At the bottom, under **"Content Link,"** you'll find the unique URL. This is the
 &nbsp;  
 
 **Summary**
-- Use the Apple Marketing Tools site to search for your app.
+- Use the <a href="https://toolbox.marketingtools.apple.com/en-us/app-store/us" target="_blank">App Store Marketing Tools</a> site to search for your app.
 - Click your developer name to jump to your full "App List" page.
 - Copy the "Content Link" at the bottom to get your dedicated portfolio address.
 &nbsp;

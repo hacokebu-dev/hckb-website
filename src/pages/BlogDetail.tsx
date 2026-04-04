@@ -12,9 +12,9 @@ const BlogDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { currentLang } = useLanguage();
-  
+
   const post = getBlogPost(id || '', currentLang as 'en' | 'ko');
-  
+
   if (!post) {
     return (
       <Layout>
@@ -24,10 +24,10 @@ const BlogDetail = () => {
       </Layout>
     );
   }
-  
+
   const metaDescription = post.description || post.content.substring(0, 155).replace(/[#*_\n]/g, '');
   const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? 'ko/' : ''}blog/${id}`;
-  
+
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -54,7 +54,7 @@ const BlogDetail = () => {
     "inLanguage": currentLang,
     ...(post.ogImage && { "image": post.ogImage })
   };
-  
+
   return (
     <Layout>
       <Helmet>
@@ -91,11 +91,11 @@ const BlogDetail = () => {
                 <span className="text-ivory">|</span>
                 <span className="text-ivory text-[1.5rem]">{post.category}</span>
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ivory !leading-[1.3]">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#ffffff] !leading-[1.3]">
                 {post.title}
               </h1>
             </header>
-            
+
             {/* Content */}
             <div className="markdown-content">
               <ReactMarkdown

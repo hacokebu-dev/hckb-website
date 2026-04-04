@@ -129,7 +129,8 @@
   }
 
   .markdown-content {
-    @apply leading-relaxed text-[1.125rem];
+    @apply text-[1.2rem];
+    line-height: 1.9;
     color: #ffffff;
   }
 

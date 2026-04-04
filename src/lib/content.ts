@@ -86,6 +86,23 @@ function parseProject(rawContent: string): Project {
   };
 }
 
+function parseBlogDateToTimestamp(dateString: string): number {
+  const trimmed = dateString.trim();
+
+  // Supports formats like "26년 3월 12일" and "2026년 3월 12일".
+  const koDateMatch = trimmed.match(/^(\d{2,4})년\s*(\d{1,2})월\s*(\d{1,2})일$/);
+  if (koDateMatch) {
+    const rawYear = Number.parseInt(koDateMatch[1], 10);
+    const year = rawYear < 100 ? 2000 + rawYear : rawYear;
+    const month = Number.parseInt(koDateMatch[2], 10);
+    const day = Number.parseInt(koDateMatch[3], 10);
+    return Date.UTC(year, month - 1, day);
+  }
+
+  const parsed = Date.parse(trimmed);
+  return Number.isNaN(parsed) ? 0 : parsed;
+}
+
 export function getBlogPosts(lang: 'en' | 'ko'): BlogPost[] {
   const files = lang === 'ko' ? blogFilesKo : blogFilesEn;
   const posts: BlogPost[] = [];
@@ -100,17 +117,7 @@ export function getBlogPosts(lang: 'en' | 'ko'): BlogPost[] {
 
   // Sort by date (newest first)
   return posts.sort((a, b) => {
-    const dateA = new Date(a.date.replace(/년|월|일/g, match => {
-      if (match === '년') return '/';
-      if (match === '월') return '/';
-      return '';
-    }));
-    const dateB = new Date(b.date.replace(/년|월|일/g, match => {
-      if (match === '년') return '/';
-      if (match === '월') return '/';
-      return '';
-    }));
-    return dateB.getTime() - dateA.getTime();
+    return parseBlogDateToTimestamp(b.date) - parseBlogDateToTimestamp(a.date);
   });
 }
 
@@ -144,6 +151,7 @@ export function getProject(id: string, lang: 'en' | 'ko'): Project | null {
 export const categories = [
   { id: 'all', name: 'All', nameKo: '전체' },
   { id: 'makingstory', name: 'Making Story', nameKo: '제작기' },
+  { id: 'notes', name: 'Notes', nameKo: '노트' },
   // { id: 'category2', name: 'Category2', nameKo: '카테고리2' },
   // { id: 'category3', name: 'Category3', nameKo: '카테고리3' },
 ];

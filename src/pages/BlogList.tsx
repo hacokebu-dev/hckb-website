@@ -21,38 +21,38 @@ const BlogList = () => {
   const { t } = useTranslation();
   const { getLocalizedPath, currentLang } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
-  
+
   const currentPage = parseInt(searchParams.get('page') || '1', 10);
   const [selectedCategory, setSelectedCategory] = useState('all');
-  
+
   const allPosts = getBlogPosts(currentLang as 'en' | 'ko');
-  
+
   const filteredPosts = selectedCategory === 'all'
     ? allPosts
     : allPosts.filter((post) => {
-        const category = categories.find(c => c.id === selectedCategory);
-        if (!category) return false;
-        const postCategory = post.category.toLowerCase();
-        return (
-          postCategory === category.id.toLowerCase() ||
-          postCategory === category.name.toLowerCase() ||
-          postCategory === category.nameKo.toLowerCase()
-        );
-      });
-  
+      const category = categories.find(c => c.id === selectedCategory);
+      if (!category) return false;
+      const postCategory = post.category.toLowerCase();
+      return (
+        postCategory === category.id.toLowerCase() ||
+        postCategory === category.name.toLowerCase() ||
+        postCategory === category.nameKo.toLowerCase()
+      );
+    });
+
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
   const validPage = Math.max(1, Math.min(currentPage, totalPages || 1));
-  
+
   const paginatedPosts = filteredPosts.slice(
     (validPage - 1) * POSTS_PER_PAGE,
     validPage * POSTS_PER_PAGE
   );
-  
+
   const handleCategoryChange = (categoryId: string) => {
     setSelectedCategory(categoryId);
     setSearchParams({}); // Reset to page 1 when category changes
   };
-  
+
   const handlePageChange = (page: number) => {
     if (page === 1) {
       setSearchParams({});
@@ -61,12 +61,12 @@ const BlogList = () => {
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
+
   const renderPaginationItems = () => {
     const items = [];
     const showEllipsisStart = validPage > 3;
     const showEllipsisEnd = validPage < totalPages - 2;
-    
+
     // Always show first page
     items.push(
       <PaginationItem key={1}>
@@ -79,7 +79,7 @@ const BlogList = () => {
         </PaginationLink>
       </PaginationItem>
     );
-    
+
     if (showEllipsisStart) {
       items.push(
         <PaginationItem key="ellipsis-start">
@@ -87,7 +87,7 @@ const BlogList = () => {
         </PaginationItem>
       );
     }
-    
+
     // Show pages around current page
     for (let i = Math.max(2, validPage - 1); i <= Math.min(totalPages - 1, validPage + 1); i++) {
       if (i <= 1 || i >= totalPages) continue;
@@ -103,7 +103,7 @@ const BlogList = () => {
         </PaginationItem>
       );
     }
-    
+
     if (showEllipsisEnd) {
       items.push(
         <PaginationItem key="ellipsis-end">
@@ -111,7 +111,7 @@ const BlogList = () => {
         </PaginationItem>
       );
     }
-    
+
     // Always show last page if more than 1 page
     if (totalPages > 1) {
       items.push(
@@ -126,10 +126,10 @@ const BlogList = () => {
         </PaginationItem>
       );
     }
-    
+
     return items;
   };
-  
+
   return (
     <Layout>
       <Helmet>
@@ -145,15 +145,14 @@ const BlogList = () => {
               <button
                 key={category.id}
                 onClick={() => handleCategoryChange(category.id)}
-                className={`category-filter ${
-                  selectedCategory === category.id ? 'category-filter-active' : 'text-ivory'
-                }`}
+                className={`category-filter ${selectedCategory === category.id ? 'category-filter-active' : 'text-ivory'
+                  }`}
               >
                 {currentLang === 'ko' ? category.nameKo : category.name}
               </button>
             ))}
           </div>
-          
+
           {/* Blog List */}
           {paginatedPosts.length > 0 ? (
             <div>
@@ -175,7 +174,7 @@ const BlogList = () => {
           ) : (
             <p className="text-muted-foreground text-lg">{t('blogList.empty')}</p>
           )}
-          
+
           {/* Pagination */}
           {totalPages > 1 && (
             <div className="mt-12">
@@ -187,9 +186,9 @@ const BlogList = () => {
                       className={`cursor-pointer ${validPage === 1 ? 'pointer-events-none opacity-50' : ''}`}
                     />
                   </PaginationItem>
-                  
+
                   {renderPaginationItems()}
-                  
+
                   <PaginationItem>
                     <PaginationNext
                       onClick={() => handlePageChange(Math.min(totalPages, validPage + 1))}

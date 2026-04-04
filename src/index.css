@@ -109,7 +109,7 @@
   }
 
   .blog-item-title {
-    @apply text-[1.5rem] font-medium text-ivory group-hover:text-accent transition-colors flex-1 min-w-0;
+    @apply text-[1.5rem] font-medium text-ivory transition-colors flex-1 min-w-0;
   }
 
   .blog-item-date {
@@ -117,7 +117,7 @@
   }
 
   .project-card {
-    @apply cursor-pointer transition-transform duration-300 hover:scale-[1.02];
+    @apply cursor-pointer transition-transform duration-300;
   }
 
   .category-filter {
@@ -126,6 +126,16 @@
 
   .category-filter-active {
     @apply bg-ivory text-background;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .group:hover .blog-item-title {
+      color: hsl(var(--accent));
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
   }
 
   .markdown-content {

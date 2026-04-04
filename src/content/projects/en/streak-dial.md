@@ -40,7 +40,7 @@ This distinction matters. For many, a consistent sense of resistance and a smoot
 <h1>The Vision Behind the Form</h1>
 <p>I didn't want to make just another "fun toy." I wanted to create a tool that feels natural to pick up whenever your hands are idle—a tool that functions quietly without demanding attention. Like a well-placed object on a desk that you find yourself reaching for instinctively until a rhythm naturally forms.
 <img src="/assets/sd_04.jpg" alt="Minimalist Design" />
-The design was heavily influenced by the philosophy of **Dieter Rams**. Following his "Less, but better" motto, I believe good design should make a product useful and intuitive without being intrusive. Streak Dial embraces this by stripping away unnecessary features and focusing purely on the haptic sensation of rotation and usability. The minimalist aesthetic ensures it’s something you can use daily without ever getting tired of it.</p>
+The design was heavily influenced by the philosophy of 'Dieter Rams'. Following his "Less, but better" motto, I believe good design should make a product useful and intuitive without being intrusive. Streak Dial embraces this by stripping away unnecessary features and focusing purely on the haptic sensation of rotation and usability. The minimalist aesthetic ensures it’s something you can use daily without ever getting tired of it.</p>
 </div>
 <br>
 <img src="/assets/sd_05.jpg" alt="Lifestyle Image" />

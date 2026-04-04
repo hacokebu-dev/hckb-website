@@ -1,19 +1,28 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { Link, useParams, useNavigate } from 'react-router-dom';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/Layout';
-import { getBlogPost } from '@/lib/content';
+import { getBlogPost, getBlogPosts } from '@/lib/content';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const BlogDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { currentLang } = useLanguage();
+  const { currentLang, getLocalizedPath } = useLanguage();
 
   const post = getBlogPost(id || '', currentLang as 'en' | 'ko');
+  const allPosts = getBlogPosts(currentLang as 'en' | 'ko');
+  const currentIndex = allPosts.findIndex((item) => item.id === id);
+  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex >= 0 && currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
+
+  const truncateTitle = (title: string, maxLength = 30) => {
+    if (title.length <= maxLength) return title;
+    return `${title.slice(0, maxLength)}...`;
+  };
 
   if (!post) {
     return (
@@ -117,9 +126,52 @@ const BlogDetail = () => {
                 {post.content}
               </ReactMarkdown>
             </div>
+
           </div>
         </div>
       </article>
+
+      {(previousPost || nextPost) && (
+        <section className="py-8 border-t border-ivory/20">
+          <nav className="container-main" aria-label="Post navigation">
+            <div className="flex items-center justify-between gap-4">
+              <div className="w-1/2">
+                {previousPost ? (
+                  <Link
+                    to={getLocalizedPath(`/blog/${previousPost.id}`)}
+                    className="group inline-flex items-center gap-2 text-left text-ivory hover:text-accent transition-colors"
+                  >
+                    <ArrowLeft className="w-4 h-4 shrink-0" />
+                    <span className="hidden lg:inline text-[1.05rem]">
+                      {truncateTitle(previousPost.title)}
+                    </span>
+                    <span className="lg:hidden text-[1rem]">{currentLang === 'ko' ? '이전' : 'Prev'}</span>
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+
+              <div className="w-1/2">
+                {nextPost ? (
+                  <Link
+                    to={getLocalizedPath(`/blog/${nextPost.id}`)}
+                    className="group inline-flex items-center justify-end gap-2 w-full text-right text-ivory hover:text-accent transition-colors"
+                  >
+                    <span className="hidden lg:inline text-[1.05rem]">
+                      {truncateTitle(nextPost.title)}
+                    </span>
+                    <span className="lg:hidden text-[1rem]">{currentLang === 'ko' ? '다음' : 'Next'}</span>
+                    <ArrowRight className="w-4 h-4 shrink-0" />
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+            </div>
+          </nav>
+        </section>
+      )}
     </Layout>
   );
 };

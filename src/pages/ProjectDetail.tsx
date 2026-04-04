@@ -1,19 +1,28 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { Link, useParams, useNavigate } from 'react-router-dom';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/Layout';
-import { getProject } from '@/lib/content';
+import { getProject, getProjects } from '@/lib/content';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { currentLang } = useLanguage();
+  const { currentLang, getLocalizedPath } = useLanguage();
 
   const project = getProject(id || '', currentLang as 'en' | 'ko');
+  const allProjects = getProjects(currentLang as 'en' | 'ko');
+  const currentIndex = allProjects.findIndex((item) => item.id === id);
+  const previousProject = currentIndex > 0 ? allProjects[currentIndex - 1] : null;
+  const nextProject = currentIndex >= 0 && currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null;
+
+  const truncateTitle = (title: string, maxLength = 30) => {
+    if (title.length <= maxLength) return title;
+    return `${title.slice(0, maxLength)}...`;
+  };
 
   if (!project) {
     return (
@@ -96,6 +105,48 @@ const ProjectDetail = () => {
           </div>
         </div>
       </article>
+
+      {(previousProject || nextProject) && (
+        <section className="py-8 border-t border-ivory/20">
+          <nav className="container-main" aria-label="Project navigation">
+            <div className="flex items-center justify-between gap-4">
+              <div className="w-1/2">
+                {previousProject ? (
+                  <Link
+                    to={getLocalizedPath(`/project/${previousProject.id}`)}
+                    className="group inline-flex items-center gap-2 text-left text-ivory hover:text-accent transition-colors"
+                  >
+                    <ArrowLeft className="w-4 h-4 shrink-0" />
+                    <span className="hidden lg:inline text-[1.05rem]">
+                      {truncateTitle(previousProject.title)}
+                    </span>
+                    <span className="lg:hidden text-[1rem]">{currentLang === 'ko' ? '이전' : 'Prev'}</span>
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+
+              <div className="w-1/2">
+                {nextProject ? (
+                  <Link
+                    to={getLocalizedPath(`/project/${nextProject.id}`)}
+                    className="group inline-flex items-center justify-end gap-2 w-full text-right text-ivory hover:text-accent transition-colors"
+                  >
+                    <span className="hidden lg:inline text-[1.05rem]">
+                      {truncateTitle(nextProject.title)}
+                    </span>
+                    <span className="lg:hidden text-[1rem]">{currentLang === 'ko' ? '다음' : 'Next'}</span>
+                    <ArrowRight className="w-4 h-4 shrink-0" />
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+            </div>
+          </nav>
+        </section>
+      )}
     </Layout>
   );
 };

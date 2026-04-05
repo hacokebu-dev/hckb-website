@@ -1,7 +1,7 @@
 ---
 id: appstore-myapp-adress
 title: How to View and Share Your Full App Portfolio on the App Store
-date: March 29, 2026
+date: Mar 29, 2026
 category: Notes
 ---
 

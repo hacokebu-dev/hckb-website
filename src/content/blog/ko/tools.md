@@ -1,6 +1,6 @@
 ---
 id: tools-making-story
-title: 출판 편집자를 위한 올인원 업무 툴킷, Tools 제작기
+title: 출판 편집자를 위한 올인원 업무 툴킷, 〈Tools〉 제작기
 date: 26년 1월 22일
 category: 제작기
 ---

@@ -1,7 +1,7 @@
 ---
 id: passing-the-app-store-review
 title: "How I Finally Nailed the App Store Review on the First Try"
-date: "March 23, 2026"
+date: "Mar 23, 2026"
 category: Notes
 ---
 

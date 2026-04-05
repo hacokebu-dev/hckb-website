@@ -1,7 +1,7 @@
 ---
 id: googleplay-developer-program-registration-failed
 title: Registering for Google Play: A Battle with Identity Verification
-date: March 12, 2026
+date: Mar 12, 2026
 category: Notes
 ---
 

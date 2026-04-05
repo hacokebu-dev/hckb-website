@@ -1,6 +1,6 @@
 ---
 id: hckb_website
-title: 하코 앤 케부 웹사이트 제작기
+title: 〈하코 앤 케부 웹사이트〉 제작기
 date: 26년 1월 23일
 category: 제작기
 ---

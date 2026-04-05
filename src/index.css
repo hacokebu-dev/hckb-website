@@ -147,6 +147,16 @@
   .markdown-content p {
     @apply mb-4;
     color: #ffffff;
+    font-weight: 300;
+  }
+
+  .markdown-content p,
+  .markdown-content li,
+  .markdown-content blockquote,
+  .markdown-content figcaption,
+  .markdown-content th,
+  .markdown-content td {
+    font-family: 'Pretendard', 'SUIT Variable', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   .markdown-content h1 {
@@ -180,6 +190,7 @@
   .markdown-content li {
     @apply mb-2;
     color: #ffffff;
+    font-weight: 300;
   }
 
   .markdown-content strong,

@@ -13,12 +13,14 @@ When I looked into the details, it was flagged for "Missing Information" needed 
 
 I started digging through other developers' experiences. Some suggested that filming the physical device being used (with another camera) works wonders, while others swore that such a method would *never* get approved. Since my direct screen recording had already been rejected, I decided to give physical filming a shot.
 
-Luckily, I happened to have an overhead camera mount—a "top-down" rig—lying around. (See the image below.)
+Luckily, I happened to have an overhead camera mount—a "top-down" rig—lying around.
 ​&nbsp;
 
 &nbsp; 
 
 <img src="/assets/asp2.png">
+<figcaption>This</figcaption>
+​&nbsp;
 
 I originally bought this during a brief, ambitious phase when I dreamed of becoming a YouTuber. It had been sitting in a corner gathering dust, but it finally found its true purpose. I filmed myself actually interacting with the app on the phone and submitted it. 
 

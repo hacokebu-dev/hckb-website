@@ -111,16 +111,31 @@ const BlogDetail = () => {
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
                 components={{
-                  img: ({ src, alt }) => (
-                    <div className="w-full my-8">
-                      <img
-                        src={src}
-                        alt={alt || ''}
-                        loading="lazy"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ),
+                  img: ({ src, alt, className }) => {
+                    const hasStoreBadgeClass = className?.split(' ').includes('store-badge');
+
+                    if (hasStoreBadgeClass) {
+                      return (
+                        <img
+                          src={src}
+                          alt={alt || ''}
+                          loading="lazy"
+                          className="store-badge"
+                        />
+                      );
+                    }
+
+                    return (
+                      <div className="w-full my-8">
+                        <img
+                          src={src}
+                          alt={alt || ''}
+                          loading="lazy"
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    );
+                  },
                 }}
               >
                 {post.content}

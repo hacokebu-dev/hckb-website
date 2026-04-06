@@ -63,8 +63,17 @@ category: 제작기
 〈스트릭 다이얼〉은 내가 처음으로 기획부터 완성까지 온전히 끝낸 앱 프로젝트라 개인적으로 의미가 깊다. 디자인적으로도 기능적으로도 아쉬운 부분은 있지만, 직접 돌려봤을 때 느껴지는 그 특유의 재미만큼은 만족스럽다. 실제 사용자들의 반응을 보며 개선할 날이 기다려진다.
 &nbsp;
 
-&nbsp; 
+&nbsp; 
+<hr>
+<br>
 
+무료 다운로드 링크 ⬇️
+
+<a href="https://apps.apple.com/kr/app/%EC%8A%A4%ED%8A%B8%EB%A6%AD-%EB%8B%A4%EC%9D%B4%EC%96%BC-%EB%AF%B8%EB%8B%88%EB%A9%80-%ED%94%BC%EC%A0%AF-%ED%86%A0%EC%9D%B4/id6760454698" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
+</a>
+
+&nbsp; 
 <hr>
 <br>
 

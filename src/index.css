@@ -218,6 +218,16 @@
     @apply w-full my-6;
   }
 
+  .markdown-content a.store-badge-link {
+    display: inline-block;
+  }
+
+  .markdown-content img.store-badge {
+    width: auto;
+    height: 60px;
+    margin: 0;
+  }
+
   .markdown-content figure {
     @apply my-6;
   }

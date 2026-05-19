@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    // GitHub Pages SPA routing hack for custom domain
-    const route = window.location.pathname + window.location.search;
-    sessionStorage.setItem('redirect', route);
-    window.location.replace('/');
+    (function () {
+      var pathname = window.location.pathname;
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+
+      function unique(items) {
+        var seen = {};
+        var result = [];
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          if (!item || seen[item]) continue;
+          seen[item] = true;
+          result.push(item);
+        }
+        return result;
+      }
+
+      function buildCandidates(path) {
+        var candidates = [path];
+
+        if (path.length > 1 && path.endsWith('/')) {
+          candidates.push(path.slice(0, -1));
+        }
+
+        if (!path.endsWith('/')) {
+          candidates.push(path + '/');
+        }
+
+        if (path.endsWith('/index.html')) {
+          var base = path.slice(0, -('/index.html'.length));
+          candidates.push(base || '/');
+          candidates.push((base || '/') + (base === '/' ? '' : '/'));
+        }
+
+        if (path.endsWith('.html')) {
+          var withoutHtml = path.slice(0, -('.html'.length)) || '/';
+          candidates.push(withoutHtml);
+          if (!withoutHtml.endsWith('/')) {
+            candidates.push(withoutHtml + '/');
+          }
+        } else if (path !== '/') {
+          candidates.push(path + '.html');
+        }
+
+        return unique(candidates);
+      }
+
+      function withQueryAndHash(path) {
+        return path + search + hash;
+      }
+
+      function fallbackToSpa() {
+        var route = pathname + search + hash;
+        try {
+          sessionStorage.setItem('redirect', route);
+        } catch (_) {
+          // Ignore storage errors and still attempt root fallback.
+        }
+        window.location.replace('/');
+      }
+
+      var current = pathname;
+      var candidates = buildCandidates(current).filter(function (path) {
+        return path !== current;
+      });
+
+      (function tryNext(index) {
+        if (index >= candidates.length) {
+          fallbackToSpa();
+          return;
+        }
+
+        var candidate = candidates[index];
+
+        fetch(candidate, {
+          method: 'HEAD',
+          cache: 'no-store',
+          credentials: 'same-origin'
+        })
+          .then(function (response) {
+            if (response.ok) {
+              window.location.replace(withQueryAndHash(candidate));
+              return;
+            }
+            tryNext(index + 1);
+          })
+          .catch(function () {
+            tryNext(index + 1);
+          });
+      })(0);
+    })();
   </script>
 </head>
+
 <body></body>
+
 </html>

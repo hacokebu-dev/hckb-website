@@ -3,8 +3,8 @@ import * as path from 'path';
 
 /**
  * Generate SPA redirect pages for GitHub Pages
- * This creates index.html files in subdirectories so that direct URL access
- * returns 200 OK instead of 404, allowing proper SPA routing and SEO indexing.
+ * This creates route-specific static entry points so direct URL access returns
+ * 200 OK instead of 404, allowing proper SPA routing and better indexing.
  */
 
 const DIST_DIR = 'dist';
@@ -41,7 +41,7 @@ function getContentIds(dir: string): string[] {
 
 function generateSpaRedirects(): void {
   const indexHtmlPath = path.join(DIST_DIR, 'index.html');
-  
+
   if (!fs.existsSync(indexHtmlPath)) {
     console.error('Error: dist/index.html not found. Run build first.');
     process.exit(1);
@@ -67,20 +67,29 @@ function generateSpaRedirects(): void {
 
   for (const route of allRoutes) {
     const cleanRoute = route.replace(/^\//, '');
-    const routePath = path.join(DIST_DIR, `${cleanRoute}.html`);
-    const routeDir = path.dirname(routePath);
+    const htmlPath = path.join(DIST_DIR, `${cleanRoute}.html`);
+    const indexPath = path.join(DIST_DIR, cleanRoute, 'index.html');
+    const htmlDir = path.dirname(htmlPath);
+    const indexDir = path.dirname(indexPath);
 
-    // Create directory if it doesn't exist
-    if (!fs.existsSync(routeDir)) {
-      fs.mkdirSync(routeDir, { recursive: true });
+    // Create parent directories if they don't exist
+    if (!fs.existsSync(htmlDir)) {
+      fs.mkdirSync(htmlDir, { recursive: true });
+    }
+    if (!fs.existsSync(indexDir)) {
+      fs.mkdirSync(indexDir, { recursive: true });
     }
 
-    // Copy index.html to this route
-    fs.writeFileSync(routePath, indexHtmlContent);
-    console.log(`✓ Created ${routePath}`);
+    // Keep flat route.html output for compatibility
+    fs.writeFileSync(htmlPath, indexHtmlContent);
+    console.log(`✓ Created ${htmlPath}`);
+
+    // Create folder-based route/index.html for trailing-slash requests
+    fs.writeFileSync(indexPath, indexHtmlContent);
+    console.log(`✓ Created ${indexPath}`);
   }
 
-  console.log(`\n✅ SPA redirects generated for ${allRoutes.length} routes (${STATIC_ROUTES.length} static + ${dynamicRoutes.length} dynamic)`);
+  console.log(`\n✅ SPA redirects generated for ${allRoutes.length} routes (${STATIC_ROUTES.length} static + ${dynamicRoutes.length} dynamic), each as .html + /index.html`);
 }
 
 generateSpaRedirects();

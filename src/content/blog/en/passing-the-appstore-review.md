@@ -5,7 +5,7 @@ date: "Mar 23, 2026"
 category: Notes
 ---
 
-<img src="/assets/asp1.png">
+<img src="/assets/asp/asp1.png">
 
 After registering my app and waiting anxiously, the result finally came in: "Rejected."
 
@@ -18,7 +18,7 @@ Luckily, I happened to have an overhead camera mount—a "top-down" rig—lying 
 
 &nbsp; 
 
-<img src="/assets/asp2.png">
+<img src="/assets/asp/asp2.png">
 <figcaption>This</figcaption>
 ​&nbsp;
 

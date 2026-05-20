@@ -5,7 +5,7 @@ date: 26년 3월 23일
 category: 노트
 ---
 
-<img src="/assets/asp1.png">
+<img src="/assets/asp/asp1.png">
 
 앱을 등록하고 한참을 기다렸는데 돌아온 심사 결과는 '심사를 통과하지 못함'.
 
@@ -16,7 +16,7 @@ category: 노트
 
 &nbsp; 
 
-<img src="/assets/asp2.png">
+<img src="/assets/asp/asp2.png">
 <figcaption>이런 제품이다</figcaption>
 ​&nbsp;
 

@@ -10,7 +10,7 @@ category: 노트
 
 &nbsp; 
 ## 1. 앱스토어 마케팅 툴 접속
-<img src="/assets/asmyapp1.png">
+<img src="/assets/asmyapp/asmyapp1.png">
 
 <a href="https://toolbox.marketingtools.apple.com/en-us/app-store/us" target="_blank">toolbox.marketingtools.apple.com/en-us/app-store/us</a>
 
@@ -20,7 +20,7 @@ category: 노트
 &nbsp; 
 
 ## 2. 내 앱에서 개발자 이름 클릭
-<img src="/assets/asmyapp2.jpg">
+<img src="/assets/asmyapp/asmyapp2.jpg">
 
 앱 이름 아래에 **파란색으로 된 개발자 이름**을 클릭한다. 
 &nbsp;
@@ -28,7 +28,7 @@ category: 노트
 &nbsp; 
 
 ## 3. 콘텐트 링크에서 주소 확인
-<img src="/assets/asmyapp3.jpg">
+<img src="/assets/asmyapp/asmyapp3.jpg">
 
 개발자 이름을 클릭해서 들어온 페이지에는 내가 출시한 앱 리스트가 보인다.
 

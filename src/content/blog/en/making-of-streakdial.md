@@ -26,7 +26,7 @@ I recalled those infinitely rotating dials on old audio equipment. I wondered wh
 
 Since the structure was so simple, implementing the core mechanics wasn't particularly difficult. The real challenge was the design. Initially, I leaned toward my usual minimalist style, but I soon realized that a simple function paired with a bare-bones design wouldn't be enough to make the product stand out. So, I decided to lean heavily into the visuals. When I thought of high-quality design for a minimalist product, 'Dieter Rams(1932~)' immediately came to mind.
 
-<img src="/assets/sd_04.jpg">
+<img src="/assets/fs/sd_04.jpg">
 &nbsp;
 Taking inspiration from his work, I aimed for a design where you could almost feel the 'physicality' of the object through the screen. The fact that this was a style I’d never have the chance to explore at my day job also fueled my motivation. I poured a lot of effort into it, though as always, things didn't turn out quite as perfectly as planned.
 

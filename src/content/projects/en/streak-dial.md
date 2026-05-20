@@ -3,10 +3,10 @@ id: streak-dial
 number: "02"
 title: "Streak Dial: A Fidget Toy for Your Fingertips—Find Calm in Every Rotation"
 date: "March 2026"
-thumbnail: /assets/sd_01.jpg
+thumbnail: /assets/fs/sd_01.jpg
 ---
 
-<img src="/assets/sd_01.jpg" alt="Streak Dial Main Image" />
+<img src="/assets/fs/sd_01.jpg" alt="Streak Dial Main Image" />
 <br>
 <div class="text-narrow">
 We all have those moments throughout the day when our hands just need something to do. Maybe it's that brief lapse in focus during work, a moment of deep thought, or the restless boredom of waiting. In these times, we often find ourselves mindlessly tapping on the desk or fiddling with whatever is nearby.
@@ -15,7 +15,7 @@ I created the dial-type fidget toy app, 〈Streak Dial〉, for exactly those mom
 </div>
 <br>
 <video
-src="/assets/fs.mp4"
+src="/assets/fs/fs.mp4"
 autoplay
 muted
 loop
@@ -34,16 +34,16 @@ Instead of visual flashiness, it focuses on the sensation of touch. Rather than 
 This distinction matters. For many, a consistent sense of resistance and a smooth, repetitive rotation is far more grounding than a fast, flashy distraction.
 </div>
 <br>
-<img src="/assets/sd_03.jpg" alt="Design Detail" />
+<img src="/assets/fs/sd_03.jpg" alt="Design Detail" />
 <br>
 <div class="text-narrow">
 <h1>The Vision Behind the Form</h1>
 <p>I didn't want to make just another "fun toy." I wanted to create a tool that feels natural to pick up whenever your hands are idle—a tool that functions quietly without demanding attention. Like a well-placed object on a desk that you find yourself reaching for instinctively until a rhythm naturally forms.
-<img src="/assets/sd_04.jpg" alt="Minimalist Design" />
+<img src="/assets/fs/sd_04.jpg" alt="Minimalist Design" />
 The design was heavily influenced by the philosophy of 'Dieter Rams'. Following his "Less, but better" motto, I believe good design should make a product useful and intuitive without being intrusive. Streak Dial embraces this by stripping away unnecessary features and focusing purely on the haptic sensation of rotation and usability. The minimalist aesthetic ensures it’s something you can use daily without ever getting tired of it.</p>
 </div>
 <br>
-<img src="/assets/sd_05.jpg" alt="Lifestyle Image" />
+<img src="/assets/fs/sd_05.jpg" alt="Lifestyle Image" />
 <br>
 <div class="text-narrow">
 <h1>When to Use Streak Dial</h1>

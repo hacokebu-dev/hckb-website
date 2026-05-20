@@ -10,7 +10,7 @@ To get my apps onto Android, I set out to register for a Google Play Developer a
 While it wasn't quite as bewildering as the Apple Developer Program experience, it certainly wasn't a walk in the park either. I got rejected right at the identity verification stage.
 &nbsp;
 
-<img src="/assets/gpb.png">
+<img src="/assets/gpb/gpb.png">
 
 The system asked for something like a utility bill for verification. I dug through my emails, found a digital water bill, and submitted a screenshot—only to have it promptly rejected. I followed the instructions, so the "failed" notification was frustrating. 
 

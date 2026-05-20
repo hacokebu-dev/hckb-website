@@ -5,7 +5,7 @@ date: Jan 23, 2026
 category: Making Story
 ---
 <figure>
-<img src="/assets/hckb_01.jpg">
+<img src="/assets/hckb/hckb_01.jpg">
 <figcaption>"Create small digital tools and toys."</figcaption>
 </figure>
 &nbsp;
@@ -32,14 +32,14 @@ After outlining the core concept, I opened Figma. I wanted this website to have 
 
 I did have some concerns about whether long passages of ivory text on a black background would provide a comfortable reading experience. Even though the color contrast passed web accessibility standards, I worried it might feel heavy. However, creating a separate light theme felt too cumbersome for this stage, so I decided to stick with the original vision.
 
-<img src="/assets/hckb_07.jpg">
+<img src="/assets/hckb/hckb_07.jpg">
 &nbsp;
 
 &nbsp;  
 
 ## Lovable
 
-<img src="/assets/hckb_04.jpg">
+<img src="/assets/hckb/hckb_04.jpg">
 
 Then came the dilemma of technical implementation. I first thought of **Gatsby** (<https://www.gatsbyjs.com>), a static site generator I’ve used before, but I’d heard that **Astro** (<https://astro.build>) is the current industry favorite. As I was looking into Astro, I suddenly thought, "Do I really need to build this from scratch?" So, I decided to co-create it with an AI agent.
 
@@ -52,7 +52,7 @@ Coincidentally, I got the chance to try the PRO plan of a service called **Lovab
 
 I fed my Figma designs and detailed specs into Lovable. I was meticulous with my requests: multi-language support (i18n), applying Unicorn Studio scripts to the hero section, a Markdown-based portfolio and blog, and full responsiveness. The initial output was—as is typical with AI agents—quite impressive at first glance. However, it wasn't at the level of polish I wanted, so it required significant refining.
 
-<img src="/assets/hckb_05.jpg">
+<img src="/assets/hckb/hckb_05.jpg">
 
 Lovable had an interesting feature I hadn't seen in other AI agents at the time: **"Visual Edit."** It allows you to click directly on the UI and request specific changes. I tried it out with high hopes, but it ended up feeling a bit frustrating for my workflow. Eventually, I went back to my old ways—checking class names myself and giving precise instructions. 😅
 
@@ -67,7 +67,7 @@ One of Lovable's strengths is supposedly its seamless integration with Supabase 
 
 ## The Logo
 
-<img src="/assets/hckb_06.jpg">
+<img src="/assets/hckb/hckb_06.jpg">
 
 Lastly, I have to mention the logo. Honestly, I didn't even have one until I started building the site. But you can't finish a website without a logo, so I got to work. I felt like it should involve a **"Buk"** (a traditional Korean drum). It reflects how I feel right now—playing the drum, the gong, and everything else all by myself (a "one-man band" situation). I created several drafts based on the drum motif and refined them into the logo you see now. To be honest, I'm not 100% satisfied with it. I’ll keep it for now to see if it grows on me; if not, I’ll sit down and give it a proper rework later.
 &nbsp;

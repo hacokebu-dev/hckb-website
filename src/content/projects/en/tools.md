@@ -3,12 +3,12 @@ id: tools
 number: "01"
 title: "Tools: An All-in-One Toolkit for Publishing Editors"
 date: "December 2025"
-thumbnail: /assets/tools_01.jpg
+thumbnail: /assets/tools/tools_01.jpg
 ---
 
 <figure class="seamless">
-<img src="/assets/tools_01.jpg" alt="1" />
-<img src="/assets/tools_02.jpg" alt="2" />
+<img src="/assets/tools/tools_01.jpg" alt="1" />
+<img src="/assets/tools/tools_02.jpg" alt="2" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -17,8 +17,8 @@ thumbnail: /assets/tools_01.jpg
 </div>
 <br>
 <figure class="seamless">
-<img src="/assets/tools_03.jpg" alt="3" />
-<img src="/assets/tools_04.jpg" alt="4" />
+<img src="/assets/tools/tools_03.jpg" alt="3" />
+<img src="/assets/tools/tools_04.jpg" alt="4" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -31,7 +31,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_05.jpg" alt="5" />
+<img src="/assets/tools/tools_05.jpg" alt="5" />
 <br>
 <div class="text-narrow">
 <h1>02. Book Spine Calculator</h1>
@@ -42,7 +42,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_06.jpg" alt="6" />
+<img src="/assets/tools/tools_06.jpg" alt="6" />
 <br>
 <div class="text-narrow">
 <h1>03. Book Size Comparison Chart</h1>
@@ -52,7 +52,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_07.jpg" alt="7" />
+<img src="/assets/tools/tools_07.jpg" alt="7" />
 <br>
 <div class="text-narrow">
 <h1>04. Character Counter</h1>
@@ -63,8 +63,8 @@ thumbnail: /assets/tools_01.jpg
 </div>
 <br>
 <figure class="seamless">
-<img src="/assets/tools_08.jpg" alt="8" />
-<img src="/assets/tools_09.jpg" alt="9" />
+<img src="/assets/tools/tools_08.jpg" alt="8" />
+<img src="/assets/tools/tools_09.jpg" alt="9" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -76,7 +76,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_10.jpg" alt="10" />
+<img src="/assets/tools/tools_10.jpg" alt="10" />
 <br>
 <div class="text-narrow">
 <h1>06. Additional Features</h1>
@@ -92,25 +92,25 @@ thumbnail: /assets/tools_01.jpg
 <div class="text-narrow">
 <h1>Design & UX Features</h1>
 <h2>01. Visual-Centric Intuitive Menu</h2>
-<img src="/assets/tools_11.jpg" alt="11" />
+<img src="/assets/tools/tools_11.jpg" alt="11" />
 <ul>
   <li>Icon Metaphors: Rather than relying solely on text-based menus, we used icon imagery reflecting the character of each tool to enhance both accessibility and aesthetics.</li>
   </ul>
-<img src="/assets/tools_12.jpg" alt="12" />
+<img src="/assets/tools/tools_12.jpg" alt="12" />
 <ul>
   <li>Interactive Feedback: Icons subtly enlarge when hovered over, allowing users to clearly identify the function they are currently selecting.</li>
 </ul>
 <h2>02. Clear Interface Requiring No Second-Guessing</h2>
-<img src="/assets/tools_13.jpg" alt="13" />
+<img src="/assets/tools/tools_13.jpg" alt="13" />
 <ul>
   <li>Optimized Status Displays: Button activation conditions are intuitively designed. Buttons that haven't met requirements are clearly marked as 'Disabled' to prevent unnecessary clicks.</li>
 </ul>
-<img src="/assets/tools_14.jpg" alt="14" />
+<img src="/assets/tools/tools_14.jpg" alt="14" />
 <ul>
   <li>Outlink Indicators: Menus leading to external sites are marked with outlink icons to notify users of page exits in advance.</li>
 </ul>
 <h2>03. Friendly Real-Time Status Notifications</h2>
-<img src="/assets/tools_15.jpg" alt="15" />
+<img src="/assets/tools/tools_15.jpg" alt="15" />
 <ul>
   <li>Toast Notifications: A toast message appears at the bottom whenever major functions (like copy or delete) are executed, providing clear confirmation that the task was successful.</li>
 </ul>
@@ -121,17 +121,17 @@ thumbnail: /assets/tools_01.jpg
 <div class="text-narrow">
 <h1>Brand Design</h1>
 <h2>01. Design Metaphor: Physicality of Paper</h2>
-<img src="/assets/tools_16.jpg" alt="16" />
+<img src="/assets/tools/tools_16.jpg" alt="16" />
 <ul>
   <li>We took ‘Paper,’ a central and familiar element of an editor’s daily work, as our design motif. To recreate the feeling of a manuscript laid casually on a desk, elements are rotated by about 2 degrees, giving paper a sense of presence within a flat digital screen. Folded-corner details were added to visually express the three-dimensionality of paper.</li>
   </ul>
 <h2>02. Color System: Classic Black & White</h2>
-<img src="/assets/tools_17.jpg" alt="17" />
+<img src="/assets/tools/tools_17.jpg" alt="17" />
 <ul>
   <li>In line with Editor's Room's identity, we used Black & White as the main colors. This symbolizes the editor's professionalism—focusing on the 'text' and 'content' itself rather than flashy decoration—and provides a work environment that reduces eye strain during long hours of use.</li>
 </ul>
 <h2>03. Identity System</h2>
-<img src="/assets/tools_18.jpg" alt="18" />
+<img src="/assets/tools/tools_18.jpg" alt="18" />
 <ul>
   <li>We established an integrated identity system by combining the 〈Tools〉 logo with the Editor's Room wordmark. This demonstrates that the service is a natural extension of the Editor's Room brand.</li>
 </ul>

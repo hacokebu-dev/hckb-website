@@ -27,12 +27,12 @@ In the end, I took the popular advice and just signed up with a fresh account. T
 
 &nbsp;  
 
-<img src="/assets/appledv2.png">
+<img src="/assets/appledv/appledv2.png">
 They told me the review would take 48 hours, but as the clock ticked past the two-day mark, I started to get nervous.
 &nbsp;
 
 &nbsp;  
-<img src="/assets/appledv1.png">
+<img src="/assets/appledv/appledv1.png">
 Just as I was thinking, "Maybe tomorrow," the email finally arrived. It didn't quite reach 49 hours, but Apple definitely missed their "within 48 hours" promise by a hair.
 &nbsp;
 

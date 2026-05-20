@@ -3,12 +3,12 @@ id: tools
 number: "01"
 title: "Tools: 출판 편집자를 위한 올인원 업무 툴킷"
 date: "2025년 12월"
-thumbnail: /assets/tools_01.jpg
+thumbnail: /assets/tools/tools_01.jpg
 ---
 
 <figure class="seamless">
-<img src="/assets/tools_01.jpg" alt="1" />
-<img src="/assets/tools_02.jpg" alt="2" />
+<img src="/assets/tools/tools_01.jpg" alt="1" />
+<img src="/assets/tools/tools_02.jpg" alt="2" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -17,8 +17,8 @@ thumbnail: /assets/tools_01.jpg
 </div>
 <br>
 <figure class="seamless">
-<img src="/assets/tools_03.jpg" alt="3" />
-<img src="/assets/tools_04.jpg" alt="4" />
+<img src="/assets/tools/tools_03.jpg" alt="3" />
+<img src="/assets/tools/tools_04.jpg" alt="4" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -31,7 +31,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_05.jpg" alt="5" />
+<img src="/assets/tools/tools_05.jpg" alt="5" />
 <br>
 <div class="text-narrow">
 <h1>02. 책등 계산기</h1>
@@ -42,7 +42,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_06.jpg" alt="6" />
+<img src="/assets/tools/tools_06.jpg" alt="6" />
 <br>
 <div class="text-narrow">
 <h1>03. 책 크기 비교표</h1>
@@ -52,7 +52,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_07.jpg" alt="7" />
+<img src="/assets/tools/tools_07.jpg" alt="7" />
 <br>
 <div class="text-narrow">
 <h1>04. 글자 수 계산기</h1>
@@ -63,8 +63,8 @@ thumbnail: /assets/tools_01.jpg
 </div>
 <br>
 <figure class="seamless">
-<img src="/assets/tools_08.jpg" alt="8" />
-<img src="/assets/tools_09.jpg" alt="9" />
+<img src="/assets/tools/tools_08.jpg" alt="8" />
+<img src="/assets/tools/tools_09.jpg" alt="9" />
 </figure>
 <br>
 <div class="text-narrow">
@@ -76,7 +76,7 @@ thumbnail: /assets/tools_01.jpg
 </ul>
 </div>
 <br>
-<img src="/assets/tools_10.jpg" alt="10" />
+<img src="/assets/tools/tools_10.jpg" alt="10" />
 <br>
 <div class="text-narrow">
 <h1>06. 그 밖의 기능</h1>
@@ -92,25 +92,25 @@ thumbnail: /assets/tools_01.jpg
 <div class="text-narrow">
 <h1>디자인 및 UX 특징</h1>
 <h2>01. 비주얼 중심의 직관적인 메뉴</h2>
-<img src="/assets/tools_11.jpg" alt="11" />
+<img src="/assets/tools/tools_11.jpg" alt="11" />
 <ul>
   <li>아이콘 메타포: 텍스트만으로 구성된 단조로운 메뉴 대신, 각 도구의 성격을 담은 아이콘 이미지를 활용하여 접근성과 심미성을 모두 높였다.</li>
   </ul>
-<img src="/assets/tools_12.jpg" alt="12" />
+<img src="/assets/tools/tools_12.jpg" alt="12" />
 <ul>
   <li>인터랙티브 피드백: 메뉴에 마우스를 올리면 아이콘이 부드럽게 확대되어, 현재 선택 중인 기능을 명확하게 인지하도록 도왔다.</li>
 </ul>
 <h2>02. 고민이 필요 없는 명확한 인터페이스</h2>
-<img src="/assets/tools_13.jpg" alt="13" />
+<img src="/assets/tools/tools_13.jpg" alt="13" />
 <ul>
   <li>상태 표시 최적화: 버튼 활성화 조건을 직관적으로 설계. 조건이 충족되지 않은 버튼은 'Disabled' 상태를 명확히 표시하여 불필요한 클릭을 방지했다.</li>
 </ul>
-<img src="/assets/tools_14.jpg" alt="14" />
+<img src="/assets/tools/tools_14.jpg" alt="14" />
 <ul>
   <li>아웃링크 안내: 외부 사이트로 연결되는 메뉴에는 별도의 아웃링크 아이콘을 부착하여 페이지 이탈을 미리 인지할 수 있게 배려했다.</li>
 </ul>
 <h2>03. 친절한 실시간 상태 안내</h2>
-<img src="/assets/tools_15.jpg" alt="15" />
+<img src="/assets/tools/tools_15.jpg" alt="15" />
 <ul>
   <li>토스트(Toast) 알림: 복사나 삭제 등 주요 기능을 실행할 때마다 하단에 토스트 메시지를 띄워, 작업이 성공적으로 완료되었음을 확실하게 안내했다.</li>
 </ul>
@@ -121,17 +121,17 @@ thumbnail: /assets/tools_01.jpg
 <div class="text-narrow">
 <h1>브랜드 디자인</h1>
 <h2>01. 디자인 메타포: 종이의 물성</h2>
-<img src="/assets/tools_16.jpg" alt="16" />
+<img src="/assets/tools/tools_16.jpg" alt="16" />
 <ul>
   <li>출판 편집자의 가장 본질적인 도구인 '종이'를 디자인 모티프로 삼았다. 평면적인 디지털 화면 속에서도 종이의 존재감을 느낄 수 있도록 요소를 2도 가량 회전시켜, 책상 위에 무심한 듯 놓인 원고의 느낌을 재현했다. 또한 끝이 접힌 듯한 디테일을 더해 종이의 입체감을 시각적으로 표현했다.</li>
   </ul>
 <h2>02. 컬러 시스템: Classic Black & White</h2>
-<img src="/assets/tools_17.jpg" alt="17" />
+<img src="/assets/tools/tools_17.jpg" alt="17" />
 <ul>
   <li>에디터스 룸의 정체성에 맞추어 Black & White를 메인 컬러로 사용했다. 이는 화려한 장식보다 '텍스트'와 '콘텐츠' 그 자체에 집중하는 편집자의 전문성을 상징하며, 장시간 작업에도 눈이 피로하지 않도록 실무 환경을 고려했다.</li>
 </ul>
 <h2>03. 아이덴티티 시스템</h2>
-<img src="/assets/tools_18.jpg" alt="18" />
+<img src="/assets/tools/tools_18.jpg" alt="18" />
 <ul>
   <li>〈Tools〉의 로고와 에디터스 룸의 워드마크를 결합한 통합 아이덴티티 시스템을 구축했다. 이를 통해 본 서비스가 에디터스 룸의 연장선에 있음을 보여주었다.</li>
 </ul>

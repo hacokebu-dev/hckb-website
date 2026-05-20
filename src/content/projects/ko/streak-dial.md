@@ -3,10 +3,10 @@ id: streak-dial
 number: "02"
 title: "스트릭 다이얼: 돌릴수록 편안해지는 다이얼형 피젯 토이, 손끝으로 느끼는 작은 안정감"
 date: "2026년 03월"
-thumbnail: /assets/sd_01.jpg
+thumbnail: /assets/fs/sd_01.jpg
 ---
 
-<img src="/assets/sd_01.jpg" alt="1" />
+<img src="/assets/fs/sd_01.jpg" alt="1" />
 <br>
 <div class="text-narrow">
 하루를 보내다 보면 이유 없이 손이 바빠지고 싶은 순간이 있다. 일하다 잠깐 멍해질 때, 생각이 많을 때, 대기 시간이 지루할 때, 혹은 괜히 손가락으로 책상이나 물건을 만지작거리게 되는 때가 그렇다.
@@ -15,7 +15,7 @@ thumbnail: /assets/sd_01.jpg
 </div>
 <br>
 <video
-src="/assets/fs.mp4"
+src="/assets/fs/fs.mp4"
 autoplay
 muted
 loop
@@ -34,16 +34,16 @@ aria-label="스트릭 다이얼 영상">
 이 차이는 생각보다 크다. 빠르고 화려한 자극보다, 일정한 저항감과 부드러운 회전감을 손으로 반복해서 느끼는 쪽이 더 차분하게 느껴지는 사람도 많기 때문이다.</p>
 </div>
 <br>
-<img src="/assets/sd_03.jpg" alt="3" />
+<img src="/assets/fs/sd_03.jpg" alt="3" />
 <br>
 <div class="text-narrow">
 <h1>왜 이런 형태를 만들었나</h1>
 <p>나는 단순히 ‘재미있는 장난감’보다, 손이 심심할 때 자연스럽게 만지게 되는 도구를 만들고 싶었다. 또한 기존 피젯 스피너처럼 과하게 자신을 드러내는 형태보다 조용히 기능하길 원했다. 억지로 주의를 끄는 제품이 아니라, 마치 책상 위에 두면 무심코 손이 가고, 잠깐 돌리다 보면 어느새 리듬이 생기는 물건처럼 말이다. 
-<img src="/assets/sd_04.jpg" alt="4" />
+<img src="/assets/fs/sd_04.jpg" alt="4" />
 그래서 제품의 디자인에 디터 람스(Dieter Rams, 1932~)의 철학을 참고했다. 디터 람스는 'Less, but better'라는 모토 아래 좋은 디자인은 제품을 유용하게 하고, 이해하기 쉽게 만들며, 눈에 과하게 띄지 않아야 한다고 말했다. 〈스트릭 다이얼〉도 이 철학을 받아들여 더 많은 기능을 덧붙이기보다 단순함을 유지하며, 돌리는 감각과 반복적으로 손이 가는 사용성 자체에 집중했다. 그리고 오래 사용해도 질리지 않게  화려한 장식을 배제해 디자인했다.</p>
 </div>
 <br>
-<img src="/assets/sd_05.jpg" alt="3" />
+<img src="/assets/fs/sd_05.jpg" alt="3" />
 <br>
 <div class="text-narrow">
 <h1>〈스트릭 다이얼〉이 필요한 순간</h1>

@@ -25,12 +25,12 @@ Apple Developer 앱을 통해 등록할 수 없는 Apple 계정입니다. https:
 
 &nbsp; 
 
-<img src="/assets/appledv2.png">
+<img src="/assets/appledv/appledv2.png">
 심사에 48시간 걸린다고 했지만, 설마 했는데 48시간이 넘도록 심사가 안 끝났다.
 &nbsp;
 
 &nbsp; 
-<img src="/assets/appledv1.png">
+<img src="/assets/appledv/appledv1.png">
 내일이면 오겠지? 하는데 메일이 왔다. 49시간까진 안 걸렸지만, 48시간 이내라는 말은 못 지킨 애플이었다. 
 &nbsp;
 

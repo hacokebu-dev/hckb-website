@@ -65,7 +65,7 @@ Hopefully, someday, I’ll come back to it again.
 <hr>
 <br>
 
-Download for Free ⬇️
+〈Smile Copy Box〉 Download Link ⬇️
 
 <a href="https://apps.apple.com/us/app/snap-dock-shoot-to-sort/id6764703914" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

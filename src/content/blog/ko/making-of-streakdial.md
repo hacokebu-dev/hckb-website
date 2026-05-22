@@ -67,7 +67,7 @@ category: 제작기
 <hr>
 <br>
 
-무료 다운로드 링크 ⬇️
+〈스트릭 다이얼〉 다운로드 링크 ⬇️
 
 <a href="https://apps.apple.com/kr/app/%EC%8A%A4%ED%8A%B8%EB%A6%AD-%EB%8B%A4%EC%9D%B4%EC%96%BC-%EB%AF%B8%EB%8B%88%EB%A9%80-%ED%94%BC%EC%A0%AF-%ED%86%A0%EC%9D%B4/id6760454698" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

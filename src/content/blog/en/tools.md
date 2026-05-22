@@ -84,8 +84,15 @@ Finally, as mentioned, managing data via JSON makes maintenance easier, but the 
 'Tools' isn't a service built with flashy technology, but it was built with a deep focus on whether it would actually be useful. I hope it finds a permanent spot in the bookmarks of editors everywhere.
 &nbsp;
 
-&nbsp; 
+&nbsp; 
+<hr>
+<br>
 
+〈Tools〉 Link ⬇️
+
+· <a href="https://tools.editorsroom.kr/" target="_blank">https://tools.editorsroom.kr/</a>
+
+&nbsp; 
 <hr>
 <br>
 

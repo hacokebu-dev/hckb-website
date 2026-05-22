@@ -84,8 +84,15 @@ category: 제작기
 Tools는 화려한 기술로 만든 서비스는 아니지만 실제로 잘 쓰일 수 있는가를 가장 중요하게 생각하며 만들었다. 그래서 편집자들의 웹브라우저에 툴스가 한 자리를 차지했으면 좋겠다.
 &nbsp;
 
-&nbsp; 
+&nbsp; 
+<hr>
+<br>
 
+〈Tools〉 링크 ⬇️
+
+· <a href="https://tools.editorsroom.kr/" target="_blank">https://tools.editorsroom.kr/</a>
+
+&nbsp; 
 <hr>
 <br>
 

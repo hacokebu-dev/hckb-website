@@ -3,6 +3,7 @@ id: passing-the-app-store-review
 title: "How I Finally Nailed the App Store Review on the First Try"
 date: "Mar 23, 2026"
 category: Notes
+description: "How I resolved an App Store rejection by filming physical device interactions to pass the app review process on the first try."
 ---
 
 <img src="/assets/asp/asp1.png">

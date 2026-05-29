@@ -3,6 +3,7 @@ id: tools-making-story
 title: The Making of 〈Tools〉 An All-in-One Toolkit for Publishing Editors
 date: Jan 22, 2026
 category: Making Story
+description: "The creation of Tools, an all-in-one web toolkit built with vanilla JS to streamline daily workflows for publishing editors."
 ---
 
 <img src="/assets/tools/tools_02.jpg">

@@ -3,6 +3,7 @@ id: apple-developer-program-registration-failed-after-passing
 title: 애플 개발자 프로그램 등록 실패 후 통과
 date: 26년 3월 11일
 category: 노트
+description: "애플 개발자 프로그램 등록 과정에서 겪은 계정 오류와 심사 지연 문제를 해결하고 최종적으로 등록을 완료한 여정을 담은 노트입니다."
 ---
 
 이미 완성한 앱이 여러 개지만, 등록을 차일피일 미뤘다. 이유 중 하나는 번거로움이고, 하나는 돈이었다. 

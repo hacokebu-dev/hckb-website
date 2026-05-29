@@ -3,6 +3,7 @@ id: smile-copy-box-making-story
 title: 클립보드 앱, 〈스마일 카피 박스〉 제작기
 date: 26년 5월 20일
 category: 제작기
+description: "문장 복사를 위해 스마일 페이스를 터치하도록 설계하여, 효율성 대신 긍정적인 인터랙션과 의도적인 불편함을 제안하는 클립보드 앱 제작기입니다."
 ---
 
 ## 시작

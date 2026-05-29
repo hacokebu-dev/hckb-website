@@ -3,6 +3,7 @@ id: googleplay-developer-program-registration-failed
 title: Registering for Google Play: A Battle with Identity Verification
 date: Mar 12, 2026
 category: Notes
+description: "A summary of navigating Google Play's identity verification process using a digital certificate and completing the developer registration."
 ---
 
 To get my apps onto Android, I set out to register for a Google Play Developer account.

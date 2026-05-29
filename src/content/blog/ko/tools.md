@@ -3,6 +3,7 @@ id: tools-making-story
 title: 출판 편집자를 위한 올인원 업무 툴킷, 〈Tools〉 제작기
 date: 26년 1월 22일
 category: 제작기
+description: "현직 출판 편집자들과의 인터뷰를 바탕으로 바닐라 JS를 활용해 책등 계산기 등 실무 맞춤형 기능을 간결하게 구현한 업무 툴킷 제작기입니다."
 ---
 
 <img src="/assets/tools/tools_02.jpg">

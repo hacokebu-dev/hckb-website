@@ -3,6 +3,7 @@ id: making-of-tabledice3d
 title: The Making of 〈Talbe Dice 3D〉: A Dice App Focused on Visual Quality 
 date: May 22, 2026
 category: Making Story
+description: "The development process of Table Dice 3D, a digital dice app focusing on high-quality 3D graphics built with Three.js and Blender."
 ---
 
 ## The Beginning

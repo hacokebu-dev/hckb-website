@@ -3,6 +3,7 @@ id: googleplay-developer-program-registration-failed
 title: 구글 플레이 개발자 등록 본인 확인 퇴짜
 date: 26년 3월 12일
 category: 노트
+description: "주민등록등본을 활용해 구글 플레이의 신원 인증 반려를 해결하고, 합리적인 비용으로 개발자 계정 등록을 마친 경험을 공유합니다."
 ---
 
 안드로이드 구글 플레이에도 앱을 등록하기 위해 구글 플레이 개발자 계정을 등록했다.

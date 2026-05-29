@@ -3,6 +3,7 @@ id: making-of-croco
 title: The Making of 〈Croco Tooth〉: Designing a Bite-Sized Roulette Game
 date: May 23, 2026
 category: Making Story
+description: "The development journey of Croco Tooth, a bite-sized crocodile roulette game featuring smooth custom tooth layouts and dynamic Figma artwork."
 ---
 
 I wanted to build a game that was, above all, visually delightful.

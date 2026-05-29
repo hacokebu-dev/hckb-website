@@ -4,6 +4,7 @@ number: "02"
 title: "Streak Dial: A Fidget Toy for Your Fingertips—Find Calm in Every Rotation"
 date: "March 2026"
 thumbnail: /assets/fs/sd_01.jpg
+description: "Streak Dial is a minimalist dial-type fidget app designed for individuals seeking focus or anxiety relief through a calming, tactile rhythm and smooth rotation."
 ---
 
 <img src="/assets/fs/sd_01.jpg" alt="Streak Dial Main Image" />

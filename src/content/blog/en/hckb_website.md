@@ -3,6 +3,7 @@ id: hckb_website
 title: Designing and Building the 〈HACO & KEBU Website〉
 date: Jan 23, 2026
 category: Making Story
+description: "The design and development story of the Hako & Kebu website, built with oversized typography and the AI agent Lovable."
 ---
 <figure>
 <img src="/assets/hckb/hckb_01.jpg">

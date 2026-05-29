@@ -3,6 +3,7 @@ id: making-of-tabledice3d
 title: 그래픽에 신경 쓴 주사위 앱, 〈Talbe Dice 3D〉 제작기
 date: 26년 5월 22일
 category: 제작기
+description: "시장의 기존 앱들과 차별화하기 위해 Three.js와 블렌더를 활용해 그래픽 퀄리티를 극대화한 심플한 3D 주사위 앱 제작기입니다."
 ---
 
 ## 시작

@@ -4,6 +4,7 @@ number: "01"
 title: "Tools: 출판 편집자를 위한 올인원 업무 툴킷"
 date: "2025년 12월"
 thumbnail: /assets/tools/tools_01.jpg
+description: "툴스는 출판 편집자의 업무 편의를 위해 제작된 올인원 툴킷 서비스로, 현직자들의 목소리를 반영해 책등 계산기 등 실무 맞춤형 기능과 종이 감성의 디자인을 제공합니다."
 ---
 
 <figure class="seamless">

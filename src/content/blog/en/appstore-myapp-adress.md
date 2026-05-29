@@ -3,6 +3,7 @@ id: appstore-myapp-adress
 title: How to View and Share Your Full App Portfolio on the App Store
 date: Mar 29, 2026
 category: Notes
+description: "A step-by-step guide on how to find and share your dedicated developer portfolio link using the App Store Marketing Tools."
 ---
 
 If you've launched multiple apps, you might want a single page that showcases your entire collection rather than sharing individual links one by one. I found myself wondering how to access that "developer-only" list page, and it turns out there’s a simple way to do it.

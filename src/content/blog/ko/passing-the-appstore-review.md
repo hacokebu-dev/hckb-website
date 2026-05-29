@@ -3,6 +3,7 @@ id: passing-the-app-store-review
 title: 앱스토어 심사 한 방에 통과하기
 date: 26년 3월 23일
 category: 노트
+description: "화면 녹화 영상 제출로 인한 앱스토어 심사 반려 문제를 수직 촬영 거치대를 이용한 실제 디바이스 작동 촬영으로 해결한 팁을 다룹니다."
 ---
 
 <img src="/assets/asp/asp1.png">

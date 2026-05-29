@@ -3,6 +3,7 @@ id: hckb_website
 title: 〈하코 앤 케부 웹사이트〉 제작기
 date: 26년 1월 23일
 category: 제작기
+description: "도메인 만료 전 강렬한 타이포그래피 디자인과 AI 에이전트 러버블을 활용해 하코 앤 케부의 포트폴리오 웹사이트를 빠르게 구축한 제작기입니다."
 ---
 
 <img src="/assets/hckb/hckb_01.jpg">

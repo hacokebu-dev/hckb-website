@@ -4,6 +4,7 @@ number: "01"
 title: "Tools: An All-in-One Toolkit for Publishing Editors"
 date: "December 2025"
 thumbnail: /assets/tools/tools_01.jpg
+description: "Tools is an all-in-one toolkit designed to streamline publishing editors' workflows with highly intuitive, paper-inspired interactive features."
 ---
 
 <figure class="seamless">

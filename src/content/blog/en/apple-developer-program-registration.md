@@ -3,6 +3,7 @@ id: apple-developer-program-registration-failed-after-passing
 title: "The Long Road to Apple Developer Program Approval: From Failure to Success"
 date: Mar 11, 2026
 category: Notes
+description: "A personal account of overcoming unexpected account errors and verification delays to successfully register for the Apple Developer Program."
 ---
 
 I had several completed apps ready to go, but I kept putting off the official registration. The reasons were simple: the sheer hassle and the cost.

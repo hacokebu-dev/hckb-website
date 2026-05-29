@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsx scripts/generate-spa-redirects.ts && tsx scripts/generate-sitemap.ts && tsx scripts/generate-rss.ts",
+    "build": "vite build && tsx scripts/generate-spa-redirects.ts && tsx scripts/generate-prerender-pages.ts && tsx scripts/generate-sitemap.ts && tsx scripts/generate-rss.ts",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"

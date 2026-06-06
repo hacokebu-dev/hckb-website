@@ -63,9 +63,9 @@ const IntroductionSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
             <div className="section-number shrink-0">01</div>
             <div className="flex-1 pt-[0.2rem] pb-2">
-              <p className="text-[2rem] leading-[2.8rem] text-secondary break-keep">
-                <span className="whitespace-nowrap">{t('intro.section1.name')}</span>
-                <span className="text-[1.25rem] whitespace-nowrap">{t('intro.section1.pronunciation')}</span>
+              <p className="text-[1.5rem] md:text-[2rem] leading-[2.2rem] md:leading-[2.8rem] text-secondary break-keep">
+                <span className="whitespace-nowrap">{t('intro.section1.name')}</span>{' '}
+                <span className="text-[1rem] md:text-[1.25rem] whitespace-nowrap">{t('intro.section1.pronunciation')}</span>
                 {t('intro.section1.description')}
               </p>
             </div>
@@ -77,7 +77,7 @@ const IntroductionSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
             <div className="section-number shrink-0">02</div>
             <div className="flex-1 pt-[0.2rem] pb-2">
-              <p className="text-[2rem] leading-[2.8rem] text-secondary break-keep">
+              <p className="text-[1.5rem] md:text-[2rem] leading-[2.2rem] md:leading-[2.8rem] text-secondary break-keep">
                 {t('intro.section2.description')}
               </p>
             </div>
@@ -89,13 +89,13 @@ const IntroductionSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
             <div className="section-number shrink-0">03</div>
             <div className="flex-1 pt-[0.2rem] pb-2 space-y-4">
-              <p className="text-[2rem] leading-[2.8rem] text-secondary break-keep">
+              <p className="text-[1.5rem] md:text-[2rem] leading-[2.2rem] md:leading-[2.8rem] text-secondary break-keep">
                 {t('intro.section3.description1')}
               </p>
-              <p className="text-[2rem] leading-[2.8rem] text-secondary break-keep">
+              <p className="text-[1.5rem] md:text-[2rem] leading-[2.2rem] md:leading-[2.8rem] text-secondary break-keep">
                 {renderEmailText()}
               </p>
-              <p className="text-[2rem] leading-[2.8rem] text-secondary break-keep">
+              <p className="text-[1.5rem] md:text-[2rem] leading-[2.2rem] md:leading-[2.8rem] text-secondary break-keep">
                 {t('intro.section3.description3')}
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed break-keep">

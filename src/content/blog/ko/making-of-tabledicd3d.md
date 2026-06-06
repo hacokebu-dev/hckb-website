@@ -1,6 +1,6 @@
 ---
 id: making-of-tabledice3d
-title: 그래픽에 신경 쓴 주사위 앱, 〈Talbe Dice 3D〉 제작기
+title: 그래픽에 신경 쓴 주사위 앱, 〈Table Dice 3D〉 제작기
 date: 26년 5월 22일
 category: 제작기
 description: "시장의 기존 앱들과 차별화하기 위해 Three.js와 블렌더를 활용해 그래픽 퀄리티를 극대화한 심플한 3D 주사위 앱 제작기입니다."
@@ -84,7 +84,7 @@ aria-label="dice">
 <hr>
 <br>
 
-〈Talbe Dice 3D〉 다운로드 링크 ⬇️
+〈Talbe Dice 3D〉 다운로드 링크
 
 <a href="https://apps.apple.com/kr/app/%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%A3%BC%EC%82%AC%EC%9C%84-3d-%EC%A7%84%EC%A7%9C-%EA%B0%99%EC%9D%80-3d-%EC%A3%BC%EC%82%AC%EC%9C%84/id6760736354" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

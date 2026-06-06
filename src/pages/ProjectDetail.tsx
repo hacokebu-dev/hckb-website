@@ -13,6 +13,10 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const { currentLang, getLocalizedPath } = useLanguage();
 
+  const handleGoBack = () => {
+    navigate(getLocalizedPath('/project'));
+  };
+
   const project = getProject(id || '', currentLang as 'en' | 'ko');
   const allProjects = getProjects(currentLang as 'en' | 'ko');
   const currentIndex = allProjects.findIndex((item) => item.id === id);
@@ -81,7 +85,7 @@ const ProjectDetail = () => {
           <header className="mb-12">
             <div className="flex items-center gap-4 mb-6">
               <button
-                onClick={() => navigate(-1)}
+                onClick={handleGoBack}
                 className="flex items-center gap-2 text-ivory hover:text-accent transition-colors"
                 aria-label="Go back"
               >

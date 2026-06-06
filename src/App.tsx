@@ -1,10 +1,10 @@
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "@/i18n";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Index from "./pages/Index";
 
 const ProjectList = lazy(() => import("./pages/ProjectList"));
@@ -18,34 +18,56 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const queryClient = new QueryClient();
 
+const LanguageKeeper = ({ children }: { children: React.ReactNode }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem('user-language');
+    const path = location.pathname;
+
+    if (savedLang === 'ko' && !path.startsWith('/ko')) {
+      const isEnglishRoute = path === '/' || path.startsWith('/project') || path.startsWith('/blog');
+      if (isEnglishRoute) {
+        const targetPath = `/ko${path === '/' ? '' : path}`;
+        navigate(targetPath, { replace: true });
+      }
+    }
+  }, [location.pathname, navigate]);
+
+  return <>{children}</>;
+};
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <BrowserRouter>
-          <ScrollToTop />
-          <ScrollToTopButton />
-          <Suspense fallback={null}>
-            <Routes>
-              {/* English routes */}
-              <Route path="/" element={<Index />} />
-              <Route path="/project" element={<ProjectList />} />
-              <Route path="/project/:id" element={<ProjectDetail />} />
-              <Route path="/blog" element={<BlogList />} />
-              <Route path="/blog/:id" element={<BlogDetail />} />
-              
-              {/* Korean routes */}
-              <Route path="/ko" element={<Index />} />
-              <Route path="/ko/project" element={<ProjectList />} />
-              <Route path="/ko/project/:id" element={<ProjectDetail />} />
-              <Route path="/ko/blog" element={<BlogList />} />
-              <Route path="/ko/blog/:id" element={<BlogDetail />} />
-              
-              {/* Catch-all */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
+          <LanguageKeeper>
+            <ScrollToTop />
+            <ScrollToTopButton />
+            <Suspense fallback={null}>
+              <Routes>
+                {/* English routes */}
+                <Route path="/" element={<Index />} />
+                <Route path="/project" element={<ProjectList />} />
+                <Route path="/project/:id" element={<ProjectDetail />} />
+                <Route path="/blog" element={<BlogList />} />
+                <Route path="/blog/:id" element={<BlogDetail />} />
+                
+                {/* Korean routes */}
+                <Route path="/ko" element={<Index />} />
+                <Route path="/ko/project" element={<ProjectList />} />
+                <Route path="/ko/project/:id" element={<ProjectDetail />} />
+                <Route path="/ko/blog" element={<BlogList />} />
+                <Route path="/ko/blog/:id" element={<BlogDetail />} />
+                
+                {/* Catch-all */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </LanguageKeeper>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

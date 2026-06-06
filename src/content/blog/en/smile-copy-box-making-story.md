@@ -1,6 +1,6 @@
 ---
 id: smile-copy-box-making-story
-title: The Making of 〈Smile Copy Box〉: A Clipboard App
+title: Rethinking the Clipboard Experience: 〈Smile Copy Box〉
 date: May 20, 2026
 category: Making Story
 description: "The making of Smile Copy Box, a prompt-focused clipboard app that uses an animated smiley face to add intentional interaction friction."

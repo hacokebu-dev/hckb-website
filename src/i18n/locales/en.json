@@ -52,5 +52,11 @@
   "blog": {
     "all": "All",
     "backButton": "Back"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "goToPrevious": "Go to previous page",
+    "goToNext": "Go to next page"
   }
 }

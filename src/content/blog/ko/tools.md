@@ -89,9 +89,9 @@ Tools는 화려한 기술로 만든 서비스는 아니지만 실제로 잘 쓰�
 <hr>
 <br>
 
-〈Tools〉 링크 ⬇️
+〈Tools〉 링크
 
-· <a href="https://tools.editorsroom.kr/" target="_blank">https://tools.editorsroom.kr/</a>
+· https://<a href="https://tools.editorsroom.kr/" target="_blank">tools.editorsroom.kr/</a>
 
 &nbsp; 
 <hr>

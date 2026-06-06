@@ -1,6 +1,6 @@
 ---
 id: making-of-streakdial
-title: The Making of 〈Streak Dial〉: A Fidget Toy App
+title: Turning a Streak Counter into a Fidget Toy: 〈Streak Dial〉
 date: Apr 5, 2026
 category: Making Story
 description: "The creation story of Streak Dial, a tactile fidget app inspired by analog audio equipment and Dieter Rams' minimalist design philosophy."

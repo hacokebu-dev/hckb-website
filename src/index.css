@@ -344,6 +344,29 @@
     margin-right: auto;
     margin-bottom: 4rem;
   }
+
+  /* Custom 16px vertical spacing utilities for blog content */
+  .markdown-content .gap-16,
+  .markdown-content .space-16,
+  .markdown-content .spacer-16,
+  .markdown-content .h-16 {
+    height: 16px;
+    display: block;
+    content: "";
+  }
+
+  .markdown-content .mt-16 {
+    margin-top: 16px !important;
+  }
+
+  .markdown-content .mb-16 {
+    margin-bottom: 16px !important;
+  }
+
+  .markdown-content .my-16 {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+  }
 }
 
 @layer utilities {

@@ -16,6 +16,7 @@ export const useLanguage = () => {
   }, [currentLang, i18n]);
   
   const switchLanguage = useCallback((lang: 'en' | 'ko') => {
+    localStorage.setItem('user-language', lang);
     const currentPath = location.pathname;
     let newPath: string;
     

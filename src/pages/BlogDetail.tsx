@@ -13,6 +13,10 @@ const BlogDetail = () => {
   const navigate = useNavigate();
   const { currentLang, getLocalizedPath } = useLanguage();
 
+  const handleGoBack = () => {
+    navigate(getLocalizedPath('/blog'));
+  };
+
   const post = getBlogPost(id || '', currentLang as 'en' | 'ko');
   const allPosts = getBlogPosts(currentLang as 'en' | 'ko');
   const currentIndex = allPosts.findIndex((item) => item.id === id);
@@ -90,7 +94,7 @@ const BlogDetail = () => {
             <header className="mb-12">
               <div className="flex items-center gap-4 mb-6">
                 <button
-                  onClick={() => navigate(-1)}
+                  onClick={handleGoBack}
                   className="flex items-center gap-2 text-ivory hover:text-accent transition-colors"
                   aria-label="Go back"
                 >

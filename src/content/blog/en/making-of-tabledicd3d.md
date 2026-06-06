@@ -1,6 +1,6 @@
 ---
 id: making-of-tabledice3d
-title: The Making of 〈Talbe Dice 3D〉: A Dice App Focused on Visual Quality 
+title: Simulating Real Dice in 3D: 〈Table Dice 3D〉
 date: May 22, 2026
 category: Making Story
 description: "The development process of Table Dice 3D, a digital dice app focusing on high-quality 3D graphics built with Three.js and Blender."
@@ -84,7 +84,7 @@ aria-label="dice">
 <hr>
 <br>
 
-〈Talbe Dice 3D〉 Download Link ⬇️
+〈Table Dice 3D〉 Download Link ⬇️
 
 <a href="https://apps.apple.com/us/app/table-dice-3d-realistic-dice/id6760736354" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

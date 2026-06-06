@@ -85,7 +85,7 @@ aria-label="dice">
 <hr>
 <br>
 
-〈두근두근 악어〉 다운로드 링크 ⬇️
+〈두근두근 악어〉 다운로드 링크
 
 <a href="https://apps.apple.com/kr/app/%EB%91%90%EA%B7%BC%EB%91%90%EA%B7%BC-%EC%95%85%EC%96%B4-croco-tooth/id6760696705" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

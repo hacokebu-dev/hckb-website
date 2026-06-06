@@ -67,10 +67,13 @@ The part that gave me the most trouble—due to my own technical limitations rat
 <hr>
 <br>
 
-〈Streak Dial〉 Download Link ⬇️
+〈Streak Dial〉 Download Link
 
 <a href="https://apps.apple.com/kr/app/streak-dial/id6760454698?l=en-GB" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.hckb.streakdial" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl_aos.png" alt="Download on the App Store" class="store-badge" />
 </a>
 
 &nbsp; 

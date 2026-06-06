@@ -65,6 +65,9 @@ description: "문장 복사를 위해 스마일 페이스를 터치하도록 설
 <a href="https://apps.apple.com/kr/app/smile-copy-box-easy-clipboard/id6760682006?itscg=30200&itsct=apps_box_link&mttnsubad=6760682006" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
 </a>
+<a href="https://play.google.com/store/apps/details?id=com.hckb.smilecopybox" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl_aos.png" alt="Download on the App Store" class="store-badge" />
+</a>
 
 &nbsp; 
 <hr>

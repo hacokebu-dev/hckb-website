@@ -33,7 +33,6 @@ description: "디터 람스의 미니멀 철학과 아날로그 조그 다이얼
 &nbsp;
 
 <img src="/assets/fs/fs3.jpg">
-&nbsp;
 배경에는 금속 질감이 느껴지도록 텍스처를 입혔고, 엣지 부분에는 아주 약하게나마 반사각을 표현했다. 버튼을 탭하면 작은 LED가 켜지고 꺼지는 듯한 묘사도 더했다.
 &nbsp;
 
@@ -44,8 +43,7 @@ description: "디터 람스의 미니멀 철학과 아날로그 조그 다이얼
 작업 과정에서 예상치 못한 복병을 만났다. 나는 강박적으로 모든 애셋을 SVG로 만들었는데, 플러터(Flutter)에서 SVG를 완벽하게 렌더링하지 못한다는 사실을 알게 된 것이다. 특히 그림자 표현이 문제였다.
 
 <img src="/assets/fs/fs4.jpg">
-&nbsp;
-원래 계획대로라면 LED가 켜졌을 때 빛이 은은하게 퍼져야 하는데, 그걸 구현할 방법이 없었다. (사실 불가능은 아니지만, 배보다 배꼽이 더 큰 작업이 필요했다.) 결국 두께 있는 선(Stroke)과 그라디언트를 이용해 빛이 나는 '느낌'만 겨우 냈다. LED야 워낙 작은 요소라 티가 덜 나긴 했는데, 설정 탭의 스위치는 크기가 크다 보니 동일한 문제가 훨씬 크게 느껴졌다. 공들여 그린 그래픽이 가짜처럼 보이게 된 점이 못내 아쉬움으로 남았다.
+원래 계획대로라면 LED가 켜졌을 때 빛이 은은하게 퍼져야 하는데, 그걸 구현할 방법이 없었다. (사실 불가능은 아니지만, 배보다 배꼽이 더 큰 작업이 필요했다.) 결국 두께 있는 선과 그라디언트를 이용해 빛이 나는 '느낌'만 겨우 냈다. LED야 워낙 작은 요소라 티가 덜 나긴 했는데, 설정 탭의 스위치는 크기가 크다 보니 동일한 문제가 훨씬 크게 느껴졌다. 공들여 그린 그래픽이 가짜처럼 보이게 된 점이 못내 아쉬움으로 남았다.
 &nbsp;
 
 &nbsp; 
@@ -72,6 +70,9 @@ description: "디터 람스의 미니멀 철학과 아날로그 조그 다이얼
 
 <a href="https://apps.apple.com/kr/app/%EC%8A%A4%ED%8A%B8%EB%A6%AD-%EB%8B%A4%EC%9D%B4%EC%96%BC-%EB%AF%B8%EB%8B%88%EB%A9%80-%ED%94%BC%EC%A0%AF-%ED%86%A0%EC%9D%B4/id6760454698" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.hckb.streakdial" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl_aos.png" alt="Download on the App Store" class="store-badge" />
 </a>
 
 &nbsp; 

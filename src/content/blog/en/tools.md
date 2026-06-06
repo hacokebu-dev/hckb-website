@@ -89,9 +89,9 @@ Finally, as mentioned, managing data via JSON makes maintenance easier, but the 
 <hr>
 <br>
 
-〈Tools〉 Link ⬇️
+〈Tools〉 Link
 
-· <a href="https://tools.editorsroom.kr/" target="_blank">https://tools.editorsroom.kr/</a>
+· https://<a href="https://tools.editorsroom.kr/" target="_blank">tools.editorsroom.kr/</a>
 
 &nbsp; 
 <hr>

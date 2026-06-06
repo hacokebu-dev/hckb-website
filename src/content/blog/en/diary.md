@@ -2,7 +2,7 @@
 id: diary
 title: The Backlog: Reflecting on a Marathon of Product Launches and Documentation
 date: June 6, 2026
-category: notes
+category: Notes
 description: "Reflections on frantically writing a massive backlog of project breakdowns for 10 apps and 4 web services all at once, the lessons learned from delayed documentation, and where my writing goes from here."
 ---
 
@@ -14,6 +14,8 @@ Then again, looking at the project breakdowns for 〈Breathe Boy〉—which I wr
 Moving forward, I want to elevate my writing beyond superficial dev logs and personal diaries. My goal is to structure future essays to deliver concrete, actionable value to the people reading them.
 
 Now that the backlog of project breakdowns is officially cleared, it's time to tackle the overdue project documentation files. (Sigh)
+
+<img src="/assets/diary/diary01.jpg">
 
 &nbsp; 
 <hr>

@@ -11,7 +11,7 @@ description: "Inspired by an archivist's micro-journaling methodology, this case
 <img src="/assets/momentlog/ml01.png">
 &nbsp;
 
-I was browsing through <a href="https://longblack.co/" target="_blank">LongBlack</a> (a premium Korean curated newsletter platform) when I stumbled upon an interview with Ik-han Kim, a prominent archivist.
+I was browsing through <a href="https://longblack.co/" target="_blank">LongBlack</a> (a premium Korean curated contents platform) when I stumbled upon an interview with Ik-han Kim, a prominent archivist.
 
 In the interview, he remarked: "I actually advise office workers against writing long, exhaustive daily journals. Instead of sinking hours into archiving, why not start with a 'one-line micro-log' of your day? Every hour and a half, just drop a single line of your experiences and thoughts in the form of keywords."
 He explained that he reviews these brief snippets for just one minute right before bed to reconstruct his day. When he aggregates these logs at the end of the week, larger patterns emerge that are invisible on a day-to-day basis. Seemingly disconnected fragments connect to form a cohesive personal narrative. Over time, this habit builds what he calls "Thought Power"—the cognitive muscle to articulate and structure one's ideas effortlessly.

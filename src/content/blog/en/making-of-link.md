@@ -16,7 +16,7 @@ I initially built this website to showcase my portfolio and side projects. Howev
 Link-in-bio tools are essential for social platforms like Instagram or X (Twitter), where bios are strictly limited to a single external hyperlink. In the product discovery phase, I audited the market leaders—Linktree globally and Litly domestically in South Korea. While both are incredibly robust, mature products, they felt ill-suited for my specific needs for a few key reasons.
 
 <img src="/assets/link/link02.jpg">
-<figcaption>Linktree (Left) / Litly (Right)</figcaption>
+<figcaption>Linktree (Left) / Littly (Right)</figcaption>
 &nbsp;
 
 Purely from a UI/UX standpoint, I realized I’d be happier just shipping my own frontend. To be clear, for mainstream users who require robust analytics pipelines, CRM integrations, or monetization funnels, off-the-shelf SaaS solutions are undoubtedly the way to go. But my specification sheet didn't require any of those features. My absolute highest priority was total creative control over a highly polished, bespoke layout. So, true to form, I decided to build it from scratch.  

@@ -84,7 +84,7 @@ aria-label="dice">
 <hr>
 <br>
 
-〈Table Dice 3D〉 Download Link ⬇️
+〈Table Dice 3D〉 Download Link
 
 <a href="https://apps.apple.com/us/app/table-dice-3d-realistic-dice/id6760736354" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

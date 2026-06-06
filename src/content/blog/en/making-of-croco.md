@@ -90,7 +90,7 @@ aria-label="dice">
 <hr>
 <br>
 
-〈Croco Tooth〉 Download Link ⬇️
+〈Croco Tooth〉 Download Link
 
 <a href="https://apps.apple.com/us/app/croco-tooth-roulette-game/id6760696705" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />

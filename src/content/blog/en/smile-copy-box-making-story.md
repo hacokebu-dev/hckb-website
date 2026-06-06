@@ -66,10 +66,13 @@ Hopefully, someday, I’ll come back to it again.
 <hr>
 <br>
 
-〈Smile Copy Box〉 Download Link ⬇️
+〈Smile Copy Box〉 Download Link
 
 <a href="https://apps.apple.com/us/app/snap-dock-shoot-to-sort/id6764703914" target="_blank" rel="noopener noreferrer" class="store-badge-link">
   <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.hckb.smilecopybox" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl_aos.png" alt="Download on the App Store" class="store-badge" />
 </a>
 
 &nbsp; 

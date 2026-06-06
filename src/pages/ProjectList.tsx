@@ -144,7 +144,7 @@ const ProjectList = () => {
                       {project.number}
                     </span>
                     <div>
-                      <h2 className="text-[2rem] text-ivory font-medium group-hover:text-accent transition-colors">
+                      <h2 className="text-[2rem] text-ivory font-medium project-card-title transition-colors">
                         {project.title}
                       </h2>
                       <p className="text-muted-foreground text-[1.2rem] mt-2">

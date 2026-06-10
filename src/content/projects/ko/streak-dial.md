@@ -1,8 +1,8 @@
 ---
 id: streak-dial
-number: "02"
-title: "스트릭 다이얼: 돌릴수록 편안해지는 다이얼형 피젯 토이, 손끝으로 느끼는 작은 안정감"
-date: "2026년 03월"
+number: "01"
+title: "스트릭 다이얼: 돌릴수록 편안해지는 다이얼형 피젯 토이"
+date: "2025년 11월"
 thumbnail: /assets/fs/sd_01.jpg
 description: "스트릭 다이얼은 손이 심심하거나 차분한 자극이 필요할 때 안정적인 리듬을 느끼도록 만든 피젯 토이 앱으로, 디터 람스 철학 기반의 미니멀한 디자인과 손끝의 반복적인 조작감에 집중했습니다."
 ---
@@ -70,18 +70,23 @@ aria-label="스트릭 다이얼 영상">
 <div class="text-narrow">
 <h1>마지막으로</h1>
 누군가에게는 단순한 장난감일 수 있고, 또 누군가에게는 짧은 휴식의 루틴이 될 수 있는 앱이라고 생각한다. 중요한 건 화려한 기능보다 손끝에 남는 감각이다. 빠르게 소비되고 잊히는 앱 대신, 오래 사용할 피젯 토이 앱을 찾는다면 〈스트릭 다이얼〉을 눈여겨 보면 좋겠다. 
-<br><br>
+&nbsp;
+
+&nbsp; 
 <hr>
-무료 다운로드 링크 ⬇️
-<a href="https://apps.apple.com/kr/app/%EC%8A%A4%ED%8A%B8%EB%A6%AD-%EB%8B%A4%EC%9D%B4%EC%96%BC-%EB%AF%B8%EB%8B%88%EB%A9%80-%ED%94%BC%EC%A0%AF-%ED%86%A0%EC%9D%B4/id6760454698" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/dl.png" alt="appstoredownload" style="height: 60px; width: auto;" />
-</a>
-<br>
-</div>
 <br>
 
+〈스트릭 다이얼〉 다운로드 링크
+
+<a href="https://apps.apple.com/kr/app/%EC%8A%A4%ED%8A%B8%EB%A6%AD-%EB%8B%A4%EC%9D%B4%EC%96%BC-%EB%AF%B8%EB%8B%88%EB%A9%80-%ED%94%BC%EC%A0%AF-%ED%86%A0%EC%9D%B4/id6760454698" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl.png" alt="Download on the App Store" class="store-badge" />
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.hckb.streakdial" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+  <img src="/assets/dl_aos.png" alt="Download on the App Store" class="store-badge" />
+</a>
+</div>
 <pre>
 · HACO&KEBU의 역할: 기획, 디자인, 개발 (100%)
 · 프로젝트 기간: 2025년 11월
-· 프로젝트 링크: <a href="https://apps.apple.com/kr/app/streak-dial/id6760454698?l=en-GB">앱스토어</a>
+· 제작기: <a href="/ko/blog/making-of-streakdial" target="_blank">보러 가기</a>
 </pre>

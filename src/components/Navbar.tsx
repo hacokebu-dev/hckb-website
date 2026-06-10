@@ -9,7 +9,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 const Navbar = () => {
   const { t } = useTranslation();
   const location = useLocation();
-  const { getLocalizedPath, currentLang } = useLanguage();
+  const { getLocalizedPath } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -21,39 +21,57 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   const isActive = (path: string) => {
     const currentPath = location.pathname;
     const localizedPath = getLocalizedPath(path);
-    
+
     if (path === '/') {
       return currentPath === '/' || currentPath === '/ko';
     }
-    
+
     return currentPath.includes(path);
   };
-  
+
+  const normalizePath = (path: string) => {
+    if (path.length > 1 && path.endsWith('/')) {
+      return path.slice(0, -1);
+    }
+    return path;
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    const targetPath = normalizePath(getLocalizedPath(path));
+    const currentPath = normalizePath(location.pathname);
+
+    if (targetPath === currentPath && window.scrollY > 0) {
+      e.preventDefault();
+      window.scrollTo(0, 0);
+      window.location.reload();
+    }
+  };
+
   const navItems = [
     { path: '/', label: t('nav.home') },
     { path: '/project', label: t('nav.project') },
     { path: '/blog', label: t('nav.blog') },
   ];
-  
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md">
         <div className="container-main">
           <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-[60px]' : 'h-[100px]'}`}>
             <Logo />
-            
+
             {/* Desktop Navigation */}
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={getLocalizedPath(item.path)}
-                className={`hidden md:block text-[1.25rem] transition-colors ${
-                  isActive(item.path) ? 'text-accent font-extrabold' : 'text-ivory font-medium hover:text-accent'
-                }`}
+                onClick={(e) => handleNavClick(e, item.path)}
+                className={`hidden md:block text-[1.25rem] transition-colors ${isActive(item.path) ? 'text-accent font-extrabold' : 'text-ivory font-medium hover:text-accent'
+                  }`}
               >
                 {item.label}
               </Link>
@@ -61,7 +79,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <LanguageSelector />
             </div>
-            
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -74,27 +92,29 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
+
       {/* Mobile Menu - nav 외부로 이동 */}
       {isMobileMenuOpen && (
         <>
           {/* Backdrop - 클릭 시 메뉴 닫기 */}
-          <div 
+          <div
             className={`md:hidden fixed inset-0 bg-black/50 z-40 ${isScrolled ? 'top-[60px]' : 'top-[100px]'}`}
             onClick={() => setIsMobileMenuOpen(false)}
             aria-hidden="true"
           />
-          
+
           <div className={`md:hidden fixed left-0 right-0 bg-background border-t border-border z-50 ${isScrolled ? 'top-[60px]' : 'top-[100px]'}`}>
             <div className="container-main py-4 flex flex-col gap-4 items-center text-center">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={getLocalizedPath(item.path)}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-base font-medium py-2 transition-colors ${
-                    isActive(item.path) ? 'text-accent' : 'text-ivory'
-                  }`}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    handleNavClick(e, item.path);
+                  }}
+                  className={`text-base font-medium py-2 transition-colors ${isActive(item.path) ? 'text-accent' : 'text-ivory'
+                    }`}
                 >
                   {item.label}
                 </Link>

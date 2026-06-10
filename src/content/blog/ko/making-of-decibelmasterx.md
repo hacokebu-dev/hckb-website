@@ -65,7 +65,7 @@ PNG 덕분에 이전보다 훨씬 더 자연스러운 그래픽과 질감을 구
 
 &nbsp;
 <video
-src="/assets/dbx/dbx.mp4"
+src="/assets/dbx/dbx09.mp4"
 autoplay
 muted
 loop

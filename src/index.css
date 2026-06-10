@@ -349,6 +349,12 @@
     margin-bottom: 4rem;
   }
 
+  @media (max-width: 767px) {
+    .markdown-content .text-narrow {
+      text-align: left !important;
+    }
+  }
+
   /* Custom 16px vertical spacing utilities for blog content */
   .markdown-content .gap-16,
   .markdown-content .space-16,

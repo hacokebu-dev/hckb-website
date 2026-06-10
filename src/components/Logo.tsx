@@ -1,11 +1,28 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const Logo = () => {
   const { getLocalizedPath } = useLanguage();
+  const location = useLocation();
+  
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const isHomePage = location.pathname === '/' || location.pathname === '/ko';
+    if (isHomePage) {
+      if (window.scrollY > 0) {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+        window.location.reload();
+      }
+    }
+  };
   
   return (
-    <Link to={getLocalizedPath('/')} className="flex items-center h-[2.4rem]" aria-label="HACO & KEBU">
+    <Link 
+      to={getLocalizedPath('/')} 
+      onClick={handleClick}
+      className="flex items-center h-[2.4rem]" 
+      aria-label="HACO & KEBU"
+    >
       <svg 
         width="220" 
         height="39" 

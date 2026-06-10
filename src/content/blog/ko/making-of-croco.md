@@ -71,7 +71,7 @@ description: "피그마의 다이나믹 스트로크 그래픽과 로티 애니�
 
 &nbsp;
 <video
-src="/assets/croco/croco06.mp4"
+src="/assets/croco/croco11.mp4"
 autoplay
 muted
 loop

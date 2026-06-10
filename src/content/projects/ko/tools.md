@@ -1,6 +1,6 @@
 ---
 id: tools
-number: "01"
+number: "03"
 title: "Tools: 출판 편집자를 위한 올인원 업무 툴킷"
 date: "2025년 12월"
 thumbnail: /assets/tools/tools_01.jpg
@@ -141,6 +141,7 @@ description: "툴스는 출판 편집자의 업무 편의를 위해 제작된 �
 <pre>
 · 제작 의뢰: 에디터스 룸
 · HACO&KEBU의 역할: 기획, 디자인, 개발 (100%)
-· 프로젝트 기간: 2025년 12월 (2주일)
-· 프로젝트 링크: <a href="https://tools.editorsroom.kr/">https://tools.editorsroom.kr/</a>
+· 프로젝트 기간: 2025년 12월
+· 프로젝트 링크: https://<a href="https://tools.editorsroom.kr/" target="_blank">tools.editorsroom.kr/</a>
+· 제작기: <a href="/ko/blog/tools-making-story" target="_blank">보러 가기</a>
 </pre>

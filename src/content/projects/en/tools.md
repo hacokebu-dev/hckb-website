@@ -1,6 +1,6 @@
 ---
 id: tools
-number: "01"
+number: "03"
 title: "Tools: An All-in-One Toolkit for Publishing Editors"
 date: "December 2025"
 thumbnail: /assets/tools/tools_01.jpg
@@ -142,7 +142,8 @@ description: "Tools is an all-in-one toolkit designed to streamline publishing e
 <code>
 · Client: Editor's Room
 · Role of HACO&KEBU: Planning, Design, Development (100%)
-· Project Period: December 2025 (2 weeks)
+· Project Timeline: December 2025
+· Making Story: <a href="/blog/tools-making-story" target="_blank">View Article</a>
 · Project Link: <a href="https://tools.editorsroom.kr/">https://tools.editorsroom.kr/</a>
 </code>
 </pre>

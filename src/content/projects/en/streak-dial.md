@@ -1,8 +1,8 @@
 ---
 id: streak-dial
-number: "02"
+number: "01"
 title: "Streak Dial: A Fidget Toy for Your Fingertips—Find Calm in Every Rotation"
-date: "March 2026"
+date: "November 2025"
 thumbnail: /assets/fs/sd_01.jpg
 description: "Streak Dial is a minimalist dial-type fidget app designed for individuals seeking focus or anxiety relief through a calming, tactile rhythm and smooth rotation."
 ---
@@ -82,6 +82,6 @@ Download for Free ⬇️
 
 <pre>
 · HACO&KEBU's Role: Planning, Design, Development (100%)
-· Project Period: November 2025
-· Project Link: <a href="https://apps.apple.com/kr/app/streak-dial/id6760454698?l=en-GB">App Store</a>
+· Project Timeline: November 2025
+· Making Story: <a href="/blog/making-of-streakdial" target="_blank">View Article</a>
 </pre>

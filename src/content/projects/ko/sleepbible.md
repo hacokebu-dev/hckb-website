@@ -58,7 +58,7 @@ loop
 playsinline
 preload="metadata"
 style="width: 100%; height: auto;"
-aria-label="스마일 카피박스 영상">
+aria-label="슬립 바이블 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">

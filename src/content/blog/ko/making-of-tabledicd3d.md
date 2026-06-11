@@ -25,7 +25,7 @@ description: "시장의 기존 앱들과 차별화하기 위해 Three.js와 블�
 
 그다음으로 떠올린 건 Three.js였다. 사용해 본 적은 없었으나 이름은 익히 알고 있었다. 이전에 Three.js(<https://threejs.org>)를 이용해 만든 멋진 웹사이트를 여럿 보았기 때문이다. Three.js가 웹 기반이라 웹앱 형태로 만들어야 하는 점에 의문과 불안이 있었는데 프로토타입을 만들어 보니 꽤 괜찮게 구동되어 구현에 확신을 얻을 수 있었다.
 
-<img src="/assets/dice/dice02.png">
+<img src="/assets/dice/dice02.jpg">
 <figcaption>Three.js</figcaption>
 &nbsp;
 

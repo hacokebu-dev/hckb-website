@@ -417,7 +417,7 @@
 }
 
 .logo-scroll {
-  animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite reverse;
 }
 
 /* Responsive breakpoint - starts at 1464px */

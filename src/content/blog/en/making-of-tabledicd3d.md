@@ -25,7 +25,7 @@ Although I chose graphic quality as my main weapon, I didn't have a definitive p
 
 The next thing that came to mind was Three.js. I had never used it before, but I was well aware of the name because I had seen several stunning websites built with Three.js (<https://threejs.org>). Since Three.js is web-based, I had some doubts about building it as a web app. However, when I built a prototype, it ran quite smoothly, giving me the confidence to move forward with the implementation.
 
-<img src="/assets/dice/dice02.png">
+<img src="/assets/dice/dice02.jpg">
 <figcaption>Three.js</figcaption>
 &nbsp;
 

@@ -133,10 +133,6 @@
       color: hsl(var(--accent));
     }
 
-    .group:hover .project-card-title {
-      color: hsl(var(--accent));
-    }
-
     .project-card:hover {
       transform: scale(1.02);
     }

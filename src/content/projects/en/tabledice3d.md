@@ -66,8 +66,7 @@ aria-label="스마일 카피박스 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>The definitive dice simulator app, 〈Table Dice 3D〉<br>
-Download now!</h2>
+<h2>The definitive dice simulator app,<br>〈Table Dice 3D〉 Download now!</h2>
 </div>
 <hr>
 <br>

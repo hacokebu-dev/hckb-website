@@ -53,8 +53,7 @@ aria-label="스마일 카피박스 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>Whenever you need precise sound measurement, 〈Decibel Master X〉!<br>
-Download now.</h2>
+<h2>Whenever you need precise sound measurement,<br>〈Decibel Master X〉 Download now.</h2>
 </div>
 <hr>
 <br>

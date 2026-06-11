@@ -74,7 +74,7 @@ aria-label="ASO·KO 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>When you need App Store screenshot references, look no further than 〈ASO·KO〉!<br>
+<h2>When you need App Store screenshot references,<br>look no further than 〈ASO·KO〉!
 Try it out today.</h2>
 </div>
 <hr>

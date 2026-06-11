@@ -77,7 +77,7 @@ aria-label="브레스 보이 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>Want to game-ify your mindfulness? Download 〈Breathe Boy〉 now!</h2>
+<h2>Want to game-ify your mindfulness?<br>Download 〈Breathe Boy〉 now!</h2>
 </div>
 <hr>
 <br>

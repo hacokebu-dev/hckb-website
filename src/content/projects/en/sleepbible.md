@@ -61,8 +61,7 @@ aria-label="스마일 카피박스 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>When you need a peaceful night's rest, 〈Sleep Bible〉!<br>
-Download now.</h2>
+<h2>When you need a peaceful night's rest,<br>〈Sleep Bible〉 Download now.</h2>
 </div>
 <hr>
 <br>

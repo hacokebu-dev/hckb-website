@@ -55,8 +55,7 @@ aria-label="SNAP DOCK 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>If you want organized photos without the effort, try 〈SNAP DOCK〉!<br>
-Download it now.</h2>
+<h2>If you want organized photos without the effort,<br>try 〈SNAP DOCK〉 Download it now.</h2>
 </div>
 <hr>
 <br>

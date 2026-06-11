@@ -50,8 +50,7 @@ aria-label="스마일 카피박스 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>The clipboard manager that smiles back at you, 〈Smile Copy Box〉<br>
-Download now!</h2>
+<h2>The clipboard manager that smiles back at you,<br>〈Smile Copy Box〉 Download now!</h2>
 </div>
 <hr>
 <br>

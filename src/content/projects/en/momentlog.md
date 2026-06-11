@@ -58,8 +58,7 @@ aria-label="모먼트 로그 영상">
 </video>
 &nbsp; 
 <div class="text-narrow" style="text-align: center;">
-<h2>When you want to log your life simply, choose 〈Moment Log〉!<br>
-Download it today.</h2>
+<h2>When you want to log your life simply,<br>choose 〈Moment Log〉 Download it today.</h2>
 </div>
 <hr>
 <br>

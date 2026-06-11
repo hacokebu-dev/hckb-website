@@ -1,4 +1,4 @@
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -10,12 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 
 const BlogDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const { currentLang, getLocalizedPath } = useLanguage();
-
-  const handleGoBack = () => {
-    navigate(getLocalizedPath('/blog'));
-  };
 
   const post = getBlogPost(id || '', currentLang as 'en' | 'ko');
   const allPosts = getBlogPosts(currentLang as 'en' | 'ko');
@@ -94,13 +89,6 @@ const BlogDetail = () => {
             {/* Header */}
             <header className="mb-12">
               <div className="flex items-center gap-4 mb-6">
-                <button
-                  onClick={handleGoBack}
-                  className="flex items-center gap-2 text-ivory hover:text-accent transition-colors"
-                  aria-label="Go back"
-                >
-                  <ArrowLeft className="w-[1.5rem] h-[1.5rem]" />
-                </button>
                 <span className="text-ivory text-[1.5rem]">{post.date}</span>
                 <span className="text-ivory">|</span>
                 <span className="text-ivory text-[1.5rem]">{post.category}</span>

@@ -1,4 +1,4 @@
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -10,12 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const { currentLang, getLocalizedPath } = useLanguage();
-
-  const handleGoBack = () => {
-    navigate(getLocalizedPath('/project'));
-  };
 
   const project = getProject(id || '', currentLang as 'en' | 'ko');
   const allProjects = getProjects(currentLang as 'en' | 'ko');
@@ -85,13 +80,6 @@ const ProjectDetail = () => {
           {/* Header */}
           <header className="mb-12">
             <div className="flex items-center gap-4 mb-6">
-              <button
-                onClick={handleGoBack}
-                className="flex items-center gap-2 text-ivory hover:text-accent transition-colors"
-                aria-label="Go back"
-              >
-                <ArrowLeft className="w-[1.5rem] h-[1.5rem]" />
-              </button>
               <span className="text-ivory text-[1.5rem]">{project.date}</span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#ffffff] !leading-[1.3]">

@@ -5,7 +5,7 @@ const SITE_URL = 'https://hacokebu.com';
 
 const normalizePath = (path: string) => {
   if (!path || path === '/') return '/';
-  return path.endsWith('/') ? path.slice(0, -1) : path;
+  return path.endsWith('/') ? path : `${path}/`;
 };
 
 const HreflangTags = () => {

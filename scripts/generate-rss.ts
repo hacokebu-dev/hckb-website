@@ -49,6 +49,26 @@ function getMarkdownFiles(dir: string): string[] {
   return fs.readdirSync(dir).filter(file => file.endsWith('.md'));
 }
 
+function parseBlogDate(dateStr: string): Date {
+  const trimmed = dateStr.trim();
+  // Supports formats like "26년 3월 12일" and "2026년 3월 12일".
+  const koDateMatch = trimmed.match(/^(\d{2,4})년\s*(\d{1,2})월\s*(\d{1,2})일$/);
+  
+  if (koDateMatch) {
+    const rawYear = parseInt(koDateMatch[1], 10);
+    const year = rawYear < 100 ? 2000 + rawYear : rawYear;
+    const month = parseInt(koDateMatch[2], 10) - 1;
+    const day = parseInt(koDateMatch[3], 10);
+    return new Date(year, month, day);
+  }
+
+  const date = new Date(trimmed);
+  if (isNaN(date.getTime())) {
+    return new Date();
+  }
+  return date;
+}
+
 function getBlogEntries(lang: 'en' | 'ko'): BlogEntry[] {
   const dir = path.join(process.cwd(), 'src', 'content', 'blog', lang);
   const files = getMarkdownFiles(dir);
@@ -78,16 +98,8 @@ function getBlogEntries(lang: 'en' | 'ko'): BlogEntry[] {
 
   // Sort by date (newest first)
   return entries.sort((a, b) => {
-    const dateA = new Date(a.date.replace(/년|월|일/g, match => {
-      if (match === '년') return '/';
-      if (match === '월') return '/';
-      return '';
-    }));
-    const dateB = new Date(b.date.replace(/년|월|일/g, match => {
-      if (match === '년') return '/';
-      if (match === '월') return '/';
-      return '';
-    }));
+    const dateA = parseBlogDate(a.date);
+    const dateB = parseBlogDate(b.date);
     return dateB.getTime() - dateA.getTime();
   });
 }
@@ -143,23 +155,7 @@ function extractDescription(content: string, maxLength: number = 200): string {
 }
 
 function formatDateRFC822(dateStr: string): string {
-  // Parse Korean date format (2025년 1월 22일) or standard format
-  const koreanMatch = dateStr.match(/(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일/);
-  
-  let date: Date;
-  if (koreanMatch) {
-    date = new Date(
-      parseInt(koreanMatch[1]),
-      parseInt(koreanMatch[2]) - 1,
-      parseInt(koreanMatch[3])
-    );
-  } else {
-    date = new Date(dateStr);
-  }
-
-  if (isNaN(date.getTime())) {
-    date = new Date();
-  }
+  const date = parseBlogDate(dateStr);
 
   // Format to RFC 822 (required for RSS)
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

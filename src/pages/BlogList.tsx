@@ -130,12 +130,15 @@ const BlogList = () => {
     return items;
   };
 
+  const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? 'ko/blog/' : 'blog/'}`;
+
   return (
     <Layout>
       <Helmet>
         <title>{currentLang === 'ko' ? '블로그 | HACO&KEBU' : 'Blog | HACO&KEBU'}</title>
         <meta name="description" content={currentLang === 'ko' ? '하코케부의 블로그 글 목록' : 'Blog posts from HACO & KEBU'} />
-        <link rel="canonical" href={`https://hacokebu.com/${currentLang === 'ko' ? 'ko/' : ''}blog`} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:url" content={canonicalUrl} />
       </Helmet>
       <div className="py-12 md:py-16">
         <div className="container-main">

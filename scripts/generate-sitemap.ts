@@ -70,11 +70,13 @@ function formatDateW3C(dateStr: string): string {
   }
 }
 
+function ensureTrailingSlash(url: string): string {
+  return url.endsWith('/') ? url : `${url}/`;
+}
+
 function generateUrlEntry(enPath: string, koPath: string, lastmod: string, priority: string): string {
-  const cleanEnPath = enPath.length > 1 && enPath.endsWith('/') ? enPath.slice(0, -1) : enPath;
-  const cleanKoPath = koPath.length > 1 && koPath.endsWith('/') ? koPath.slice(0, -1) : koPath;
-  const enUrl = `${SITE_URL}${cleanEnPath}`;
-  const koUrl = `${SITE_URL}${cleanKoPath}`;
+  const enUrl = ensureTrailingSlash(`${SITE_URL}${enPath}`);
+  const koUrl = ensureTrailingSlash(`${SITE_URL}${koPath}`);
   
   return `  <url>
     <loc>${enUrl}</loc>

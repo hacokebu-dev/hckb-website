@@ -16,12 +16,15 @@ const Index = () => {
     document.title = 'HACO&KEBU';
   }, []);
 
+  const canonicalUrl = `https://hacokebu.com${isKo ? '/ko/' : '/'}`;
+
   return (
     <Layout>
       <Helmet>
         <title>HACO&KEBU</title>
         <meta name="description" content={isKo ? '작은 디지털 도구와 장난감을 만듭니다' : 'Create small digital tools and toys'} />
-        <link rel="canonical" href={`https://hacokebu.com${isKo ? '/ko' : '/'}`} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:url" content={canonicalUrl} />
       </Helmet>
       <HeroSection />
       <IntroductionSection />

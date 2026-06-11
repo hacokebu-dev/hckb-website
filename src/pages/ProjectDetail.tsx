@@ -40,7 +40,7 @@ const ProjectDetail = () => {
 
   const metaDescription = project.description || project.content.substring(0, 155).replace(/[#*_\n]/g, '');
   const ogImage = project.ogImage || project.thumbnail;
-  const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? 'ko/' : ''}project/${id}`;
+  const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? `ko/project/${id}/` : `project/${id}/`}`;
 
   const creativeWorkSchema = {
     "@context": "https://schema.org",
@@ -75,6 +75,7 @@ const ProjectDetail = () => {
         <meta name="twitter:description" content={metaDescription} />
         {ogImage && <meta name="twitter:image" content={ogImage} />}
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:url" content={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(creativeWorkSchema)}
         </script>

@@ -39,7 +39,7 @@ const BlogDetail = () => {
   }
 
   const metaDescription = post.description || post.content.substring(0, 155).replace(/[#*_\n]/g, '');
-  const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? 'ko/' : ''}blog/${id}`;
+  const canonicalUrl = `https://hacokebu.com/${currentLang === 'ko' ? `ko/blog/${id}/` : `blog/${id}/`}`;
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -82,6 +82,7 @@ const BlogDetail = () => {
         <meta name="twitter:description" content={metaDescription} />
         {post.ogImage && <meta name="twitter:image" content={post.ogImage} />}
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:url" content={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(blogPostingSchema)}
         </script>

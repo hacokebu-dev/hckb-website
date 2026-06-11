@@ -81,10 +81,14 @@ function loadEntries(type: ContentType, lang: Lang): ContentEntry[] {
     });
 }
 
+function ensureTrailingSlash(url: string): string {
+    return url.endsWith('/') ? url : `${url}/`;
+}
+
 function canonicalPath(type: ContentType, lang: Lang, id: string): string {
     const prefix = lang === 'ko' ? '/ko' : '';
     const segment = type === 'project' ? 'project' : 'blog';
-    return `${prefix}/${segment}/${id}`;
+    return ensureTrailingSlash(`${prefix}/${segment}/${id}`);
 }
 
 function injectOrReplace(html: string, pattern: RegExp, replacement: string): string {
@@ -143,7 +147,7 @@ function applySeoTemplate(html: string, entry: ContentEntry, altEnUrl: string, a
 }
 
 function writeRouteFiles(routePath: string, html: string): void {
-    const cleanRoute = routePath.replace(/^\//, '');
+    const cleanRoute = routePath.replace(/^\//, '').replace(/\/$/, '');
     const htmlPath = path.join(DIST_DIR, `${cleanRoute}.html`);
     const indexPath = path.join(DIST_DIR, cleanRoute, 'index.html');
 

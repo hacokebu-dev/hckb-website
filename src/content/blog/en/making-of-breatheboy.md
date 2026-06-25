@@ -1,7 +1,7 @@
 ---
 id: making-of-breatheboy
 title: Implementing RealityKit 3D UI for a Breath Timer: 〈Breathe Boy〉
-date: June 5, 2026
+date: Jun 5, 2026
 category: Making Story
 description: "How I harnessed Apple's RealityKit to build a Game Boy-inspired hardware interface with true 3D physical push-buttons, blending a breath trainer with nostalgic retro mini-games."
 ---

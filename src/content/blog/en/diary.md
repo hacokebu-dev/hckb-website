@@ -1,7 +1,7 @@
 ---
 id: diary
 title: The Backlog: Reflecting on a Marathon of Product Launches and Documentation
-date: June 6, 2026
+date: Jun 6, 2026
 category: Notes
 description: "Reflections on frantically writing a massive backlog of project breakdowns for 10 apps and 4 web services all at once, the lessons learned from delayed documentation, and where my writing goes from here."
 ---

@@ -1,7 +1,7 @@
 ---
 id: making-of-link
 title: Creating a Custom Link-in-Bio Service: 〈Link〉
-date: June 2, 2026
+date: Jun 2, 2026
 category: Making Story
 description: "Overcoming the design limitations of off-the-shelf platforms by building a bespoke 'Link in Bio' page featuring a grid layout for app icons and a device-framed responsive interface."
 ---

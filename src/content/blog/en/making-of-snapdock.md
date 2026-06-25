@@ -1,7 +1,7 @@
 ---
 id: making-of-snapdock
 title: Redefining Camera UX with Multi-Shutter: 〈SNAP DOCK〉
-date: June 3, 2026
+date: Jun 3, 2026
 category: Making Story
 description: "How I built a utility camera app that eliminates post-capture sorting by mapping dedicated folder shutters directly to pre-selected native photo albums."
 ---

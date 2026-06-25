@@ -1,7 +1,7 @@
 ---
 id: making-of-asoko
 title: Curating App Store Screenshot References: 〈ASO·KO〉
-date: June 1, 2026
+date: Jun 1, 2026
 category: Making Story
 description: "How I built a curated repository for domestic App Store screenshot references and survived a sudden viral surge while fiercely defending my free server tiers."
 ---
